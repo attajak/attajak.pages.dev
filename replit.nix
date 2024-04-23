@@ -1,6 +1,6 @@
 { pkgs }: {
     deps = [
-      pkgs.go
+        pkgs.go
         pkgs.hugo
 		pkgs.miniserve
     ];

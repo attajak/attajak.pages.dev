@@ -1,5 +1,5 @@
 run = "hugo && miniserve public --index index.html"
-entrypoint = README.md"
+entrypoint = "README.md"
 
 [nix]
 channel = "stable-23_11"
@@ -8,3 +8,7 @@ channel = "stable-23_11"
 build = ["hugo"]
 deploymentTarget = "static"
 publicDir = "public"
+
+[[ports]]
+localPort = 8080
+externalPort = 80
