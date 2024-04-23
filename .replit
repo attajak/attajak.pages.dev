@@ -1,0 +1,10 @@
+run = "hugo && miniserve public --index index.html"
+entrypoint = README.md"
+
+[nix]
+channel = "stable-23_11"
+
+[deployment]
+build = ["hugo"]
+deploymentTarget = "static"
+publicDir = "public"
