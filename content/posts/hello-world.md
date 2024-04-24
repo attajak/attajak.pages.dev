@@ -2,13 +2,14 @@
 title: Hello World
 date: 2022-09-29T17:06:11+08:00
 tags:
-- hello
-- FixIt
+  - hello
+  - FixIt
 categories:
-- hello
+  - hello
 code:
   maxShownLines: 11
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
+draft: false
 ---
 
 Welcome to Hugo FixIt! This is your very first post.
