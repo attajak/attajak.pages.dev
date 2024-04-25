@@ -102,7 +102,7 @@ enableEmoji = true
     name = "Tags"
     url = "/tags/"
     title = ""
-    weight = 24
+    weight = 23
     [menu.main.params]
       icon = "fa-solid fa-tags"
     [[menu.main]]
@@ -439,7 +439,7 @@ enableEmoji = true
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/images/avatar.jpg"
+      logo = "images/avatar.jpg"
       # title name
       name = "Attajak Janrak"
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -451,7 +451,7 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = ""
+      name = "attajak/fixit"
       # whether to use typeit animation for subtitle name
       typeit = false
 
@@ -490,7 +490,7 @@ enableEmoji = true
       animate = true
       icon = "fa-solid fa-heartbeat"
       pre = ""
-      value = "" # e.g. "2021-12-18T16:15:22+08:00"
+      value = "2021-12-18T16:15:22+07:00" # e.g. "2021-12-18T16:15:22+08:00"
     # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
     [params.footer.order]
       powered = 0
@@ -579,7 +579,7 @@ enableEmoji = true
     Medium = "attajak"
     Gitlab = "attajak"
     Youtubelegacy = ""
-    Youtubecustom = "@attajak"
+    Youtubecustom = "AttajakJanrak"
     Youtubechannel = ""
     Tumblr = "attajak"
     Quora = ""
@@ -595,7 +595,7 @@ enableEmoji = true
     VK = ""
     Flickr = "attajakz"
     Xing = ""
-    Snapchat = ""
+    Snapchat = "attajak"
     Soundcloud = "attajak"
     Spotify = "attajak"
     Bandcamp = ""
@@ -610,9 +610,9 @@ enableEmoji = true
     Patreon = "attajak"
     Steam = "attajak"
     Twitch = "attajak"
-    Strava = ""
+    Strava = "attajak"
     Skype = "attajak"
-    Whatsapp = ""
+    Whatsapp = "+66627824869"
     Zhihu = ""
     Douban = ""
     Angellist = ""
@@ -627,16 +627,16 @@ enableEmoji = true
     Researchgate = ""
     Mastodon = "@attajak"
     Thingiverse = ""
-    Devto = ""
+    Devto = "attajak"
     Gitea = ""
     XMPP = ""
     Matrix = ""
-    Bilibili = ""
+    Bilibili = "attajak"
     ORCID = ""
     Liberapay = ""
     Ko-Fi = ""
     BuyMeaCoffee = ""
-    Linktree = ""
+    Linktree = "@attajak"
     QQ = ""
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
@@ -644,7 +644,7 @@ enableEmoji = true
     Discord = "attajak"
     DiscordInvite = ""
     Lichess = ""
-    Pleroma = ""
+    Pleroma = "@attajak"
     Kaggle = ""
     MediaWiki= ""
     Plume = ""
@@ -653,8 +653,8 @@ enableEmoji = true
     Feishu = ""
     TryHackMe = ""
     Douyin = ""
-    TikTok = "attajak"
-    Phone = ""
+    TikTok = "@attajak"
+    Phone = "+66627824869"
     Email = "janrak@gmail.com"
     RSS = true
 
@@ -1102,7 +1102,7 @@ enableEmoji = true
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
     enable = false
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    permalink = "https://github.com/attajak/fixit"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
 
