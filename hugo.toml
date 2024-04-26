@@ -115,7 +115,7 @@ enableEmoji = true
     title = ""
     weight = 30
     [menu.main.params]
-      icon = "fa-solid fa-person"
+      icon = "fa-solid fa-readme"
       [[menu.main]]
     identifier = "contact"
     parent = ""
@@ -387,7 +387,7 @@ enableEmoji = true
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = ""
+    svgFavicon = "/favicon/safari-pinned-tab.svg"
     # Safari mask icon color
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
@@ -451,7 +451,7 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = "attajak/fixit"
+      name = "attajak/FixIt"
       # whether to use typeit animation for subtitle name
       typeit = false
 
@@ -636,7 +636,7 @@ enableEmoji = true
     Liberapay = ""
     Ko-Fi = ""
     BuyMeaCoffee = ""
-    Linktree = "@attajak"
+    Linktree = "attajak"
     QQ = ""
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
@@ -1122,7 +1122,7 @@ enableEmoji = true
 
   # FixIt 0.2.16 | NEW Reading progress bar
   [params.readingProgress]
-    enable = false
+    enable = true
     # Available values: ["left", "right"]
     start = "left"
     # Available values: ["top", "bottom"]
@@ -1135,7 +1135,7 @@ enableEmoji = true
   # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
   # For more information: https://github.com/CodeByZach/pace
   [params.pace]
-    enable = false
+    enable = true
     # All available colors:
     # ["black", "blue", "green", "orange", "pink", "purple", "red", "silver", "white", "yellow"]
     color = "blue"
