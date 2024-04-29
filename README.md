@@ -1,3 +1,5 @@
+[![Hugo build and deploy](https://github.com/attajak/FixIt/actions/workflows/deploy.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/deploy.yml)
+
 <!-- # HUGO
 
 Hugo is a static site generator that makes it easy to setup your own blog or personal website.
