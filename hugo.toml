@@ -11,7 +11,7 @@
 # website title
 title = "Attajak Janrak"
 # Hostname (and path) to the root
-baseURL = "/FixIt"
+baseURL = "https://attajak.github.io/FixIt/"
 # theme list
 theme = ["github.com/hugo-fixit/FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
