@@ -1,4 +1,4 @@
-[![Hugo build and deploy](https://github.com/attajak/FixIt/actions/workflows/deploy.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/deploy.yml)
+[![Hugo build and deploy](https://github.com/attajak/FixIt/actions/workflows/deploy.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/deploy.yml) [![Update theme](https://github.com/attajak/FixIt/actions/workflows/update-theme.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/update-theme.yml)
 
 <!-- # HUGO
 
