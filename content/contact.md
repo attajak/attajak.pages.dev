@@ -3,13 +3,13 @@ title: Contact
 subtitle: ติดต่อ
 date: 2024-04-25T11:27:30Z
 slug: contact
-description: Contact me.
+description: Contact or Follow me.
 keywords:
   - contact
   - ติดต่อ
 draft: false
 ---
-Platform | Username or Links
+Platform | Username
 --- | ---
 GitHub: | [attajak](https://github.com/attajak)
 GitHub Pages: | [Attajak.GitHub.io](https://attajak.github.io)

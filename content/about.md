@@ -24,4 +24,4 @@ draft: false
 
 > งานมีขี้บ่อย งานน้อยไม่ค่อยขี้ งานไม่มีไม่ขี้เลย
 
-![Attajak Janrak](/FixIt/images/attajak.jpg)
+![Attajak Janrak](https://attajak.pages.dev/images/attajak.jpg)
