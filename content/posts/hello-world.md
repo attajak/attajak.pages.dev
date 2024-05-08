@@ -15,7 +15,7 @@ draft: false
 Welcome to Hugo FixIt! This is your very first post.
 
 <!--more-->
-<!--
+
 Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
 
 {{< link href="https://fixit.lruihao.cn/documentation/" content="All Documentation - FixIt" title="documentation of FixIt Theme" card=true >}}
@@ -90,4 +90,3 @@ hugo mod tidy
 Whether it's questions, ideas, bugs or pull requests, all feedback is welcome!
 
 Head over to the [issues](https://github.com/hugo-fixit/FixIt/issues) or [discussions](https://github.com/hugo-fixit/FixIt/discussions) tracker.
--->
