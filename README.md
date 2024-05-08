@@ -1,7 +1,4 @@
-[![Hugo build and deploy](https://github.com/attajak/FixIt/actions/workflows/deploy.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/deploy.yml) [![Update theme](https://github.com/attajak/FixIt/actions/workflows/update-theme.yml/badge.svg)](https://github.com/attajak/FixIt/actions/workflows/update-theme.yml)
-
-<!-- # HUGO
-
+<!--
 Hugo is a static site generator that makes it easy to setup your own blog or personal website.
 
 ## Adding content
@@ -25,7 +22,8 @@ git clone https://github.com/siegerts/hugo-theme-basic themes/basic
 
 - Change `theme` entry in `config.toml` to the theme name
 
-For more, checkout [official documentations](https://gohugo.io/documentation/). -->
+For more, checkout [official documentations](https://gohugo.io/documentation/).
+-->
 
 Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
 
