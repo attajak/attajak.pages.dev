@@ -27,7 +27,7 @@ For more, checkout [official documentations](https://gohugo.io/documentation/).
 
 Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
 
-{{< link href="https://fixit.lruihao.cn/documentation/" content="All Documentation - FixIt" title="documentation of FixIt Theme" card=true >}}
+[All Documentation - FixIt](https://fixit.lruihao.cn/documentation)
 
 ## Quick Start
 

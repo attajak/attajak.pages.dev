@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/!fix!it@v0.3.5/assets/*"
+    "../.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/!fix!it@v0.3.6/assets/*"
    ]
   }
  }
