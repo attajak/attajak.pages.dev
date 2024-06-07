@@ -1,34 +1,33 @@
-<!--
-Hugo is a static site generator that makes it easy to setup your own blog or personal website.
+# Hugo FixIt Blog Template (Go)
 
-## Adding content
+This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo Modules](https://gohugo.io/hugo-modules/) feature to load the theme.
 
-You can manually create content files (for example as `content/<CATEGORY>/<FILE>.<FORMAT>`) and provide metadata in them, however you can use the `new` command to do a few things for you (like add title and date):
+It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the blog to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
 
-```sh
-$ hugo new posts/my-post.md
+## Directory structure
+
+```bash
+▸ .github/       # GitHub configuration
+▸ archetypes/    # page archetypes (like scaffolds of archetypes)
+▸ assets/        # css, js, third-party libraries etc.
+▸ config/        # configuration files
+▸ content/       # markdown files for hugo project
+▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
+▸ public/        # build directory
+▸ static/        # static files, e.g. favicon.ico
+▸ themes/        # theme submodules
+▸ go.mod
+▸ go.sum
 ```
 
-by default, this template creates a `posts/hello.md` for you, feel free to remove / rename it if you want.
+## Quick Start
 
-## Changing themes
+For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).
 
-- Explore themes [here](https://themes.gohugo.io/)
-- Download theme to `themes/<NAME>`
+### Prerequisites
 
-```sh
-git clone https://github.com/siegerts/hugo-theme-basic themes/basic
-```
-
-- Change `theme` entry in `config.toml` to the theme name
-
-For more, checkout [official documentations](https://gohugo.io/documentation/).
--->
-
-Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
-
-[All Documentation - FixIt](https://fixit.lruihao.cn/documentation)
-
+- [Go](https://go.dev/dl/)
+- [Hugo](https://gohugo.io/installation/): >= 0.112.0 (extended version)
 ## Quick Start
 
 For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).

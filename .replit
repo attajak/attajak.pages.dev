@@ -1,14 +1,10 @@
-run = "hugo && miniserve public --index index.html"
+run = "npm run server"
 entrypoint = "README.md"
+modules = ["nodejs-20:v8-20230920-bd784b9", "go-1.21:v2-20231201-3b22c78"]
 
 [nix]
 channel = "stable-23_11"
 
-[deployment]
-build = ["hugo"]
-deploymentTarget = "static"
-publicDir = "public"
-
 [[ports]]
-localPort = 8080
+localPort = 1313
 externalPort = 80
