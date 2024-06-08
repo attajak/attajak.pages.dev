@@ -19,7 +19,7 @@ dateFormat = "2006-01-02"
 # website images for Open Graph and Twitter Cards
 images = []
 # FixIt 0.2.12 | NEW enable PWA
-enablePWA = false
+enablePWA = true
 # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
 externalIcon = false
 # FixIt 0.3.0 | NEW whether to reverse the order of the navigation menu
@@ -61,7 +61,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = ""
+  svgFavicon = "/favicon/android-chrome-512x512.png"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -132,7 +132,7 @@ disableThemeInject = false
 # FixIt 0.2.18 | NEW Breadcrumb config
 [breadcrumb]
   enable = true
-  sticky = false
+  sticky = true
   showHome = true
 
 # Footer config
@@ -160,7 +160,7 @@ disableThemeInject = false
     themeLogo = true
   # FixIt 0.2.17 | CHANGED Site creation time
   [footer.siteTime]
-    enable = false
+    enable = true
     animate = true
     icon = "fa-solid fa-heartbeat"
     pre = ""
@@ -247,10 +247,10 @@ disableThemeInject = false
   GitHub = "attajak"
   Linkedin = "attajak"
   Twitter = "attajak"
-  Instagram = ""
+  Instagram = "attajak"
   Facebook = "attajak"
-  Telegram = ""
-  Medium = ""
+  Telegram = "attajak"
+  Medium = "attajak"
   Gitlab = "attajak"
   Youtubelegacy = ""
   Youtubecustom = "AttajakJanrak"
@@ -262,18 +262,18 @@ disableThemeInject = false
   Reddit = ""
   Codepen = ""
   FreeCodeCamp = ""
-  Bitbucket = ""
+  Bitbucket = "attajak"
   Stackoverflow = ""
   Weibo = ""
   Odnoklassniki = ""
   VK = ""
-  Flickr = ""
+  Flickr = "attajakz"
   Xing = ""
   Snapchat = ""
-  Soundcloud = ""
-  Spotify = ""
+  Soundcloud = "attajak"
+  Spotify = "attajak"
   Bandcamp = ""
-  Paypal = ""
+  Paypal = "attajak"
   Fivehundredpx = ""
   Mix = ""
   Goodreads = ""
@@ -281,11 +281,11 @@ disableThemeInject = false
   Foursquare = ""
   Hackernews = ""
   Kickstarter = ""
-  Patreon = "attajak"
+  Patreon = ""
   Steam = ""
-  Twitch = ""
+  Twitch = "attajak"
   Strava = ""
-  Skype = ""
+  Skype = "attajak"
   Whatsapp = ""
   Zhihu = ""
   Douban = ""
@@ -301,11 +301,11 @@ disableThemeInject = false
   Researchgate = ""
   Mastodon = "@attajak@mastodon.in.th"
   Thingiverse = ""
-  Devto = ""
+  Devto = "attajak"
   Gitea = ""
   XMPP = ""
   Matrix = ""
-  Bilibili = ""
+  Bilibili = "attajak"
   ORCID = ""
   Liberapay = ""
   Ko-Fi = ""
@@ -315,7 +315,7 @@ disableThemeInject = false
   QQGroup = "" # https://qun.qq.com/join.html
   Diaspora = ""
   CSDN = ""
-  Discord = ""
+  Discord = "attajak"
   DiscordInvite = ""
   Lichess = ""
   Pleroma = ""
@@ -345,10 +345,10 @@ disableThemeInject = false
   # FixIt 0.3.0 | NEW whether to hide a page from related posts
   hiddenFromRelated = false
   # whether to enable twemoji
-  twemoji = false
+  twemoji = true
   # whether to enable lightgallery
   # FixIt 0.2.18 | CHANGED if set to "force", images in the content will be forced to shown as the gallery.
-  lightgallery = false
+  lightgallery = true
   # whether to enable the ruby extended syntax
   ruby = true
   # whether to enable the fraction extended syntax
@@ -486,10 +486,10 @@ disableThemeInject = false
     enable = true
     Twitter = true
     Facebook = true
-    Linkedin = false
+    Linkedin = true
     Whatsapp = false
     Pinterest = false
-    Tumblr = false
+    Tumblr = true
     HackerNews = false
     Reddit = false
     VK = false
@@ -499,7 +499,7 @@ disableThemeInject = false
     Instapaper = false
     Pocket = false
     Flipboard = false
-    Weibo = true
+    Weibo = false
     Myspace = false
     Blogger = false
     Baidu = false
@@ -775,7 +775,7 @@ disableThemeInject = false
 
 # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
 [githubCorner]
-  enable = false
+  enable = true
   permalink = "https://github.com/attajak/attajak.pages.dev"
   title = "View source on GitHub"
   position = "right" # ["left", "right"]
