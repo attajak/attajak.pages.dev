@@ -1,33 +1,7 @@
-# Hugo FixIt Blog Template (Go)
+Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
 
-This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo Modules](https://gohugo.io/hugo-modules/) feature to load the theme.
+[All Documentation - FixIt](https://fixit.lruihao.cn/documentation)
 
-It comes with a basic theme structure and configuration. GitHub action has been set up to deploy the blog to a public GitHub page automatically. Also, there's a cron job to update the theme automatically everyday.
-
-## Directory structure
-
-```bash
-▸ .github/       # GitHub configuration
-▸ archetypes/    # page archetypes (like scaffolds of archetypes)
-▸ assets/        # css, js, third-party libraries etc.
-▸ config/        # configuration files
-▸ content/       # markdown files for hugo project
-▸ data/          # blog data (allow: yaml, json, toml), e.g. friends.yml
-▸ public/        # build directory
-▸ static/        # static files, e.g. favicon.ico
-▸ themes/        # theme submodules
-▸ go.mod
-▸ go.sum
-```
-
-## Quick Start
-
-For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).
-
-### Prerequisites
-
-- [Go](https://go.dev/dl/)
-- [Hugo](https://gohugo.io/installation/): >= 0.112.0 (extended version)
 ## Quick Start
 
 For a complete quick start, see this [page](https://fixit.lruihao.cn/documentation/getting-started/).
@@ -74,27 +48,3 @@ Afterwards you can upgrade the theme with the following command:
 ```bash
 # Update theme manually
 hugo mod get -u github.com/hugo-fixit/FixIt@latest
-hugo mod tidy
-```
-
-<details>
-  <summary>Start via NPM script</summary>
-
-  ```bash
-  # build the blog
-  npm run build
-  # run a local debugging server with watch
-  npm run server
-  # run a local debugging server in production environment
-  npm run server:production
-  # update theme submodules
-  npm run update:theme
-  ```
-
-</details>
-
-## Feedback
-
-Whether it's questions, ideas, bugs or pull requests, all feedback is welcome!
-
-Head over to the [issues](https://github.com/hugo-fixit/FixIt/issues) or [discussions](https://github.com/hugo-fixit/FixIt/discussions) tracker.
