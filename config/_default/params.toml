@@ -61,7 +61,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = "/favicon/android-chrome-512x512.png"
+  svgFavicon = "/favicon/apple-touch-icon.png"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -113,7 +113,7 @@ disableThemeInject = false
   # Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/favicon/safari-pinned-tab.svg"
+    logo = "/favicon/apple-touch-icon.png"
     # title name
     name = "Attajak"
     # you can add extra information before the name (HTML format is supported), such as icons
@@ -286,7 +286,7 @@ disableThemeInject = false
   Twitch = "attajak"
   Strava = ""
   Skype = "attajak"
-  Whatsapp = ""
+  Whatsapp = "+6627824869"
   Zhihu = ""
   Douban = ""
   Angellist = ""
@@ -310,7 +310,7 @@ disableThemeInject = false
   Liberapay = ""
   Ko-Fi = ""
   BuyMeaCoffee = ""
-  Linktree = ""
+  Linktree = "attajak"
   QQ = ""
   QQGroup = "" # https://qun.qq.com/join.html
   Diaspora = ""
@@ -328,7 +328,7 @@ disableThemeInject = false
   TryHackMe = ""
   Douyin = ""
   TikTok = "attajak"
-  Phone = ""
+  Phone = "+6627824869"
   Email = "janrak@gmail.com"
   RSS = true
 
@@ -491,7 +491,7 @@ disableThemeInject = false
     Pinterest = false
     Tumblr = true
     HackerNews = false
-    Reddit = false
+    Reddit = true
     VK = false
     Buffer = false
     Xing = false
@@ -504,8 +504,8 @@ disableThemeInject = false
     Blogger = false
     Baidu = false
     Odnoklassniki = false
-    Evernote = false
-    Skype = false
+    Evernote = true
+    Skype = true
     Trello = false
     Mix = false
   # FixIt 0.2.15 | CHANGED Comment config
