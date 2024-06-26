@@ -1,9 +1,11 @@
 run = "npm run server"
 entrypoint = "README.md"
 modules = ["nodejs-20", "go-1.21"]
+hidden = [".config"]
 
 [nix]
-channel = "stable-23_11"
+# channel = "stable-23_11"
+channel = "unstable"
 
 [[ports]]
 localPort = 1313

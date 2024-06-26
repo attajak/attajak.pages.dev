@@ -8,7 +8,7 @@ version = "0.2.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
 description = "Attajak.Pages.Dev"
 # site keywords
-keywords = ["Attajak", "CloudFlare", "Hugo", "FixIt"]
+keywords = ["Attajak", "CloudFlare", "Pages", "Hugo", "FixIt"]
 # site default theme ["light", "dark", "auto"]
 defaultTheme = "auto"
 # which hash function used for SRI, when empty, no SRI is used
@@ -61,7 +61,7 @@ disableThemeInject = false
   # whether to omit favicon resource links
   noFavicon = false
   # modern SVG favicon to use in place of older style .png and .ico files
-  svgFavicon = "/favicon/apple-touch-icon.png"
+  svgFavicon = "/favicon/safari-pinned-tab.svg"
   # Safari mask icon color
   iconColor = "#5bbad5"
   # Windows v8-10 tile color
@@ -227,9 +227,9 @@ disableThemeInject = false
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = ""
     # title shown in home page (HTML format is supported)
-    title = "Attajak"
+    title = "Attajak Janrak"
     # subtitle shown in home page
-    subtitle = "Attajak.Pages.Dev"
+    subtitle = "ชื่อ คิง เกิด ๘ สิงหาฯ เลือดกรุ๊ปเอ ชอบดูหนัง ฟังเพลง เล่นเกม 🇹🇭"
     # whether to use typeit animation for subtitle
     typeit = true
     # whether to show social links
@@ -255,21 +255,21 @@ disableThemeInject = false
   Youtubelegacy = ""
   Youtubecustom = "AttajakJanrak"
   Youtubechannel = ""
-  Tumblr = ""
+  Tumblr = "attajak"
   Quora = ""
   Keybase = ""
-  Pinterest = ""
-  Reddit = ""
-  Codepen = ""
+  Pinterest = "attajak"
+  Reddit = "attajak"
+  Codepen = "attajak"
   FreeCodeCamp = ""
   Bitbucket = "attajak"
   Stackoverflow = ""
   Weibo = ""
   Odnoklassniki = ""
-  VK = ""
+  VK = "attajak"
   Flickr = "attajakz"
   Xing = ""
-  Snapchat = ""
+  Snapchat = "attajak"
   Soundcloud = "attajak"
   Spotify = "attajak"
   Bandcamp = ""
@@ -278,13 +278,13 @@ disableThemeInject = false
   Mix = ""
   Goodreads = ""
   Lastfm = ""
-  Foursquare = ""
+  Foursquare = "attajak"
   Hackernews = ""
   Kickstarter = ""
   Patreon = ""
-  Steam = ""
+  Steam = "attajak"
   Twitch = "attajak"
-  Strava = ""
+  Strava = "attajak"
   Skype = "attajak"
   Whatsapp = "+6627824869"
   Zhihu = ""
@@ -373,9 +373,9 @@ disableThemeInject = false
   # If true, save the reading progress when closing the page.
   autoBookmark = false
   # FixIt 0.2.17 | NEW whether to enable wordCount
-  wordCount = true
+  wordCount = false
   # FixIt 0.2.17 | NEW whether to enable readingTime
-  readingTime = true
+  readingTime = false
   # FixIt 0.2.17 | NEW end of post flag
   endFlag = ""
   # FixIt 0.2.18 | NEW whether to enable instant.page
@@ -786,7 +786,7 @@ disableThemeInject = false
   enable = true
   # Gravatar host, default: "www.gravatar.com"
   host = "www.gravatar.com" # ["cn.gravatar.com", "gravatar.loli.net", ...]
-  style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
+  style = "identicon" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
 # FixIt 0.2.16 | NEW Back to top
 [backToTop]
