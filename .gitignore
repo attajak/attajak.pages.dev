@@ -1,7 +1,7 @@
-public
-resources
+public/
+resources/
 .hugo_build.lock
 
 package-lock.json
-node_modules
+node_modules/
 assets/jsconfig.json
