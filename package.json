@@ -4,7 +4,7 @@
   "description": "Hugo + FixIt",
   "main": "index.js",
   "scripts": {
-    "build": "hugo -v --gc --minify",
+    "build": "hugo --logLevel info --gc --minify",
     "server": "hugo server -D --disableFastRender --navigateToChanged --baseURL / --bind 0.0.0.0",
     "server:production": "npm run server -- --environment production",
     "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
