@@ -4,8 +4,7 @@ modules = ["nodejs-20", "go-1.21"]
 hidden = [".config"]
 
 [nix]
-# channel = "stable-23_11"
-channel = "unstable"
+channel = "stable-24_05"
 
 [[ports]]
 localPort = 1313
