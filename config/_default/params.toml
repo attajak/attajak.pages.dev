@@ -6,7 +6,7 @@
 # FixIt 0.2.15 | CHANGED FixIt theme version
 version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
 # site description
-description = "This is my new Hugo FixIt site"
+description = "https://attajak.pages.dev"
 # site keywords
 keywords = ["Hugo", "FixIt", "attajak", "janrak", "pages", "dev"]
 # site default theme ["light", "dark", "auto"]
@@ -250,7 +250,7 @@ disableThemeInject = false
   Medium = "attajak"
   Gitlab = "attajak"
   Youtubelegacy = ""
-  Youtubecustom = ""
+  Youtubecustom = "https://youtube.com/@attajak"
   Youtubechannel = ""
   Tumblr = "attajak"
   Quora = ""
