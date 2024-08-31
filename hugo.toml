@@ -380,7 +380,7 @@ enableEmoji = true
 
   # Author Configuration
   [params.author]
-    name = "attajak"
+    name = "Attajak Janrak"
     email = "janrak@gmail.com"
     link = "https://attajak.pages.dev"
     avatar = ""
@@ -599,7 +599,7 @@ enableEmoji = true
     GitHub = "attajak"
     Linkedin = "attajak"
     Twitter = "attajak"
-    Instagram = ""
+    Instagram = "attajak"
     Facebook = "attajak"
     Telegram = ""
     Medium = ""
@@ -611,7 +611,7 @@ enableEmoji = true
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    Reddit = ""
+    Reddit = "attajak"
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
@@ -623,7 +623,7 @@ enableEmoji = true
     Xing = ""
     Snapchat = ""
     Soundcloud = "attajak"
-    Spotify = ""
+    Spotify = "attajak"
     Bandcamp = ""
     Paypal = "attajak"
     Fivehundredpx = ""
@@ -635,7 +635,7 @@ enableEmoji = true
     Kickstarter = ""
     Patreon = ""
     Steam = "attajak"
-    Twitch = ""
+    Twitch = "attajak"
     Strava = ""
     Skype = "attajak"
     Whatsapp = ""
@@ -763,9 +763,9 @@ enableEmoji = true
   # Site SEO config
   [params.seo]
     # image URL
-    image = ""
+    image = "/images/attajak.jpg"
     # thumbnail URL
-    thumbnailUrl = ""
+    thumbnailUrl = "https://attajak.pages.dev"
 
   # Analytics config
   [params.analytics]
@@ -806,8 +806,8 @@ enableEmoji = true
 
   # FixIt 0.2.14 | NEW GitHub banner in the top-right or top-left corner
   [params.githubCorner]
-    enable = false
-    permalink = "https://github.com/hugo-fixit/FixIt"
+    enable = true
+    permalink = "https://github.com/attajak/attajak.pages.dev"
     title = "View source on GitHub"
     position = "right" # ["left", "right"]
 
@@ -1202,8 +1202,8 @@ enableEmoji = true
     # Page SEO config
     [params.page.seo]
       # image URL
-      images = []
+      images = ["/images/attajak.jpg"]
       # Publisher info
       [params.page.seo.publisher]
-        name = ""
-        logoUrl = ""
+        name = "Attajak Janrak"
+        logoUrl = "https://github.com/attajak"
