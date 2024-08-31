@@ -42,14 +42,14 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    identifier = "archives"
+    identifier = "home"
     parent = ""
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Archives"
-    url = "/archives/"
+    name = "Home"
+    url = "/"
     # title will be shown when you hover on this menu link
     title = ""
     weight = 1
@@ -60,33 +60,61 @@ enableEmoji = true
       # whether set as a draft menu item whose function is similar to a draft post/page
       draft = false
       # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-      icon = "fa-solid fa-archive"
+      icon = "fa-solid fa-home"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
       # FixIt 0.3.9 | NEW whether to show the submenu item divider line
       divided = false
   [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts/"
+    weight = 2
+    [menu.main.params]
+      icon = "fa-solid fa-pen"
+  [[menu.main]]
+    identifier = "archives"
+    name = "Posts"
+    url = "/achives/"
+    weight = 21
+    [menu.main.params]
+      icon = "fa-solid fa-archive"
+  [[menu.main]]
     identifier = "categories"
-    parent = ""
+    parent = "posts"
     pre = ""
     post = ""
     name = "Categories"
     url = "/categories/"
     title = ""
-    weight = 2
+    weight = 22
     [menu.main.params]
       icon = "fa-solid fa-folder-tree"
   [[menu.main]]
     identifier = "tags"
-    parent = ""
+    parent = "posts"
     pre = ""
     post = ""
     name = "Tags"
     url = "/tags/"
     title = ""
-    weight = 3
+    weight = 23
     [menu.main.params]
       icon = "fa-solid fa-tags"
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 3
+    [menu.main.params]
+      icon = "fa-solid fa-signature"
+  [[menu.main]]
+    identifier = "contact"
+    name = "Contact"
+    url = "/contact/"
+    weight = 4
+    [menu.main.params]
+      icon = "fa-solid fa-envelope"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
