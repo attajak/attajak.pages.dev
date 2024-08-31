@@ -74,7 +74,8 @@ enableEmoji = true
       icon = "fa-solid fa-pen"
   [[menu.main]]
     identifier = "archives"
-    name = "Posts"
+    parent = "posts"
+    name = "Archives"
     url = "/achives/"
     weight = 21
     [menu.main.params]
