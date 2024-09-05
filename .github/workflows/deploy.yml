@@ -7,6 +7,8 @@ on:
       - 'config/**'
       - 'content/**'
       - 'data/**'
+      - 'i18n/**'
+      - 'layouts/**'
       - 'static/**'
       - 'themes/**'
       - 'go.mod'
@@ -16,12 +18,18 @@ on:
     types:
       - completed
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   Actions-Hugo-Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      
+
       - name: Cache Hugo resources
         uses: actions/cache@v4
         env:
@@ -52,7 +60,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo -v --gc --minify
+        run: hugo --logLevel info --gc --minify
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
