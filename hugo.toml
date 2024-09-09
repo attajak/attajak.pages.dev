@@ -23,7 +23,7 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
+hasCJKLanguage = true
 # default amount of posts in each pages
 paginate = 12
 # copyright description used only for seo schema
