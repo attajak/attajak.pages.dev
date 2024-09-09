@@ -54,7 +54,7 @@ jobs:
           extended: true
 
       - name: Build
-        run: hugo --logLevel info --gc --minify
+        run: hugo --logLevel info --gc --minify -b /attajak.pages.dev
 
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
