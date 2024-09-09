@@ -13,7 +13,7 @@
 # website title
 title = "Attajak"
 # Hostname (and path) to the root
-baseURL = "/"
+baseURL = "/attajak.pages.dev"
 # theme list
 # theme = ["FixIt"] # enable in your site config file
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
