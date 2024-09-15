@@ -168,6 +168,8 @@ enableEmoji = true
 
   [[module.imports]]
     path = "github.com/hugo-fixit/FixIt"
+  [[module.imports]]
+    path = "github.com/hugo-fixit/shortcode-docs-bookmark"
 
 # -------------------------------------------------------------------------------------
 # Markup related configuration in Hugo

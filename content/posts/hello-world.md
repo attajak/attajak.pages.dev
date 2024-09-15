@@ -2,14 +2,11 @@
 title: Hello World
 date: 2022-09-29T17:06:11+08:00
 tags:
-  - hello
-  - FixIt
+- hello
+- FixIt
 categories:
-  - hello
-code:
-  maxShownLines: 11
+- hello
 # See details front matter: https://fixit.lruihao.cn/documentation/content-management/introduction/#front-matter
-draft: false
 ---
 
 Welcome to Hugo FixIt! This is your very first post.
@@ -18,7 +15,7 @@ Welcome to Hugo FixIt! This is your very first post.
 
 Head to the documentation page linked below for a complete guidence to get started with the [FixIt](https://github.com/hugo-fixit/FixIt) theme.
 
-{{< link href="https://fixit.lruihao.cn/documentation/" content="All Documentation - FixIt" title="documentation of FixIt Theme" card=true >}}
+{{< fixit-docs-bookmark >}}
 
 ## Quick Start
 
@@ -27,11 +24,11 @@ For a complete quick start, see this [page](https://fixit.lruihao.cn/documentati
 ### Prerequisites
 
 - [Go](https://go.dev/dl/)
-- [Hugo](https://gohugo.io/installation/): >= 0.112.0 (extended version)
+- [Hugo](https://gohugo.io/installation/): >= 0.132.0 (extended version)
 
 ### Use this Template
 
-1. Click **Use this template**, and create your repository on GitHub.
+1. Click [**Use this template**](https://github.com/hugo-fixit/hugo-fixit-starter/generate), and create your repository on GitHub.
 
     <img width="913" alt="image" src="https://github.com/hugo-fixit/hugo-fixit-starter1/assets/33419593/d5fbd940-3ffd-4750-b1e6-4e87b50b0696">
 
