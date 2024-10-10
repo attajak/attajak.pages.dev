@@ -76,7 +76,7 @@ enableEmoji = true
     identifier = "archives"
     parent = "posts"
     name = "Archives"
-    url = "/achives/"
+    url = "/archives/"
     weight = 21
     [menu.main.params]
       icon = "fa-solid fa-archive"
