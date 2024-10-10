@@ -7,7 +7,6 @@ description: About me.
 keywords:
   - about
   - เกี่ยวกับ
-toc: true
 draft: false
 ---
 # ชื่อ
