@@ -1,7 +1,11 @@
+# Hugo
 public/
 resources/
 _vendor/
 .hugo_build.lock
 
+# JavaScript
 node_modules/
 package-lock.json
+jsconfig.json
+.env
