@@ -166,10 +166,12 @@ enableEmoji = true
     extended = true
     min = "0.132.0"
 
+  # [[module.imports]]
+    # path = "github.com/hugo-fixit/FixIt"
+  # [[module.imports]]
+    # path = "github.com/hugo-fixit/shortcode-docs-bookmark"
   [[module.imports]]
-    path = "github.com/hugo-fixit/FixIt"
-  [[module.imports]]
-    path = "github.com/hugo-fixit/shortcode-docs-bookmark"
+  path = "github.com/hugo-fixit/fixit-bundle"
 
 # -------------------------------------------------------------------------------------
 # Markup related configuration in Hugo
