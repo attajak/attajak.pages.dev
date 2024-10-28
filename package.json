@@ -1,24 +1,30 @@
 {
-  "name": "attajak.pages.dev",
-  "version": "1.0.0",
-  "description": "Hugo + FixIt",
-  "main": "index.js",
-  "scripts": {
-    "build": "hugo --logLevel info --gc --minify",
-    "server": "hugo server -D --disableFastRender --navigateToChanged --baseURL / --bind 0.0.0.0",
-    "server:production": "npm run server -- --environment production",
-    "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
-    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@latest && hugo mod tidy",
-    "update:modules": "hugo mod get -u && hugo mod tidy"
+  "author": "attajak (https://github.com/attajak)",
+  "bugs": {
+    "url": "https://github.com/attajak/attajak.pages.dev/issues"
   },
+  "comments": {
+    "dependencies": {},
+    "devDependencies": {}
+  },
+  "dependencies": {},
+  "description": "Hugo + FixIt",
+  "devDependencies": {},
+  "homepage": "https://github.com/attajak/attajak.pages.dev#readme",
+  "license": "MIT",
+  "main": "index.js",
+  "name": "attajak.pages.dev",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/attajak/attajak.pages.dev.git"
   },
-  "author": "attajak (https://github.com/attajak)",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/attajak/attajak.pages.dev/issues"
+  "scripts": {
+    "build": "hugo --logLevel info --gc --minify",
+    "server": "hugo server -D --disableFastRender --navigateToChanged --baseURL / --bind 0.0.0.0",
+    "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
+    "server:production": "npm run server -- --environment production",
+    "update:modules": "hugo mod get -u && hugo mod tidy",
+    "update:theme": "hugo mod get -u github.com/hugo-fixit/FixIt@latest && hugo mod tidy"
   },
-  "homepage": "https://github.com/attajak/attajak.pages.dev#readme"
+  "version": "1.0.0"
 }
