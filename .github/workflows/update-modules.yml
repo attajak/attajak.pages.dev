@@ -9,7 +9,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  Update-FixIt:
+  Update-FixIt-Bundle:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
