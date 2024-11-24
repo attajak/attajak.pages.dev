@@ -166,10 +166,6 @@ enableEmoji = true
     extended = true
     min = "0.134.1"
 
-  # [[module.imports]]
-    # path = "github.com/hugo-fixit/FixIt"
-  # [[module.imports]]
-    # path = "github.com/hugo-fixit/shortcode-docs-bookmark"
   [[module.imports]]
   path = "github.com/hugo-fixit/fixit-bundle"
 
