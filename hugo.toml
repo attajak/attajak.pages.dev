@@ -167,7 +167,7 @@ enableEmoji = true
     min = "0.134.1"
 
   [[module.imports]]
-  path = "github.com/hugo-fixit/fixit-bundle"
+    path = "github.com/hugo-fixit/fixit-bundle"
 
 # -------------------------------------------------------------------------------------
 # Markup related configuration in Hugo
@@ -403,7 +403,7 @@ enableEmoji = true
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/images/fixit.min.svg"
+    svgFavicon = "/favicon.ico" # "/images/fixit.min.svg"
     # Safari mask icon color
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
@@ -455,7 +455,7 @@ enableEmoji = true
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/images/fixit.min.svg"
+      logo = "/favicon.ico" # "/images/fixit.min.svg"
       # title name
       name = "Attajak"
       # you can add extra information before the name (HTML format is supported), such as icons
