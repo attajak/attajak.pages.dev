@@ -21,7 +21,7 @@ jobs:
           extended: true
 
       - name: Update modules
-        run: hugo mod get -u # github.com/hugo-fixit/FixIt@latest
+        run: hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest
 
       - name: Tidy go.mod, go.sum
         run: hugo mod tidy
