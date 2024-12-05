@@ -2,9 +2,6 @@ module github.com/attajak/attajak.pages.dev
 
 go 1.20
 
-<<<<<<< HEAD
-require github.com/hugo-fixit/fixit-bundle v1.3.1 // indirect
-=======
 require (
 	github.com/hugo-fixit/FixIt v0.3.16 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.0.1 // indirect
@@ -18,4 +15,3 @@ require (
 	github.com/hugo-fixit/shortcode-mmt-netease v1.1.1 // indirect
 	github.com/hugo-fixit/shortcode-rewards v1.0.4 // indirect
 )
->>>>>>> a672563 (New hugo.toml)
