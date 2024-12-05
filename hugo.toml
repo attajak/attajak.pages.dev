@@ -23,9 +23,9 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = true
+hasCJKLanguage = false
 # default amount of posts in each pages
-pagerSize = 12
+# paginate = 12
 # copyright description used only for seo schema
 copyright = ""
 # whether to use robots.txt
@@ -35,6 +35,9 @@ enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
 
+[pagination]
+  pagerSize = 12
+
 # -------------------------------------------------------------------------------------
 # Menu Configuration
 # See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
@@ -42,17 +45,17 @@ enableEmoji = true
 
 [menu]
   [[menu.main]]
-    identifier = "home"
-    parent = ""
+    identifier = "archives"
+    parent = "posts"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
     post = ""
-    name = "Home"
-    url = "/"
+    name = "Archives"
+    url = "/archives/"
     # title will be shown when you hover on this menu link
     title = ""
-    weight = 1
+    weight = 21
     # FixIt 0.2.14 | NEW add user-defined content to menu items
     [menu.main.params]
       # add css class to a specific menu item
@@ -60,26 +63,11 @@ enableEmoji = true
       # whether set as a draft menu item whose function is similar to a draft post/page
       draft = false
       # FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
-      icon = "fa-solid fa-home"
+      icon = "fa-solid fa-archive"
       # FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
       type = ""
       # FixIt 0.3.9 | NEW whether to show the submenu item divider line
       divided = false
-  [[menu.main]]
-    identifier = "posts"
-    name = "Posts"
-    url = "/posts/"
-    weight = 2
-    [menu.main.params]
-      icon = "fa-solid fa-pen"
-  [[menu.main]]
-    identifier = "archives"
-    parent = "posts"
-    name = "Archives"
-    url = "/archives/"
-    weight = 21
-    [menu.main.params]
-      icon = "fa-solid fa-archive"
   [[menu.main]]
     identifier = "categories"
     parent = "posts"
@@ -103,17 +91,31 @@ enableEmoji = true
     [menu.main.params]
       icon = "fa-solid fa-tags"
   [[menu.main]]
+    identifier = "home"
+    name = "Home"
+    url = "/"
+    weight = 10
+    [menu.main.params]
+      icon = "fa-solid fa-home"
+  [[menu.main]]
+    identifier = "posts"
+    name = "Posts"
+    url = "/posts"
+    weight = 20
+    [menu.main.params]
+      icon = "fa-solid fa-pencil"
+  [[menu.main]]
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 3
+    weight = 30
     [menu.main.params]
       icon = "fa-solid fa-signature"
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 4
+    weight = 40
     [menu.main.params]
       icon = "fa-solid fa-envelope"
 
@@ -165,7 +167,6 @@ enableEmoji = true
   [module.hugoVersion]
     extended = true
     min = "0.134.1"
-
   [[module.imports]]
     path = "github.com/hugo-fixit/fixit-bundle"
 
@@ -175,6 +176,7 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 
 [markup]
+  _merge = "shallow"
   # Syntax Highlighting (https://gohugo.io/content-management/syntax-highlighting)
   [markup.highlight]
     ########## necessary configurations ##########
@@ -210,8 +212,13 @@ enableEmoji = true
           enable = true
         [markup.goldmark.extensions.extras.superscript]
           enable = true
-    # TODO passthrough refactor https://gohugo.io/getting-started/configuration-markup/#parserattributeblock
+    # TODO passthrough refactor https://gohugo.io/render-hooks/passthrough/
     # TODO hugo 0.122.0 https://gohugo.io/content-management/mathematics/
+    # [markup.goldmark.extensions.passthrough]
+    #   enable = true
+    #   [markup.goldmark.extensions.passthrough.delimiters]
+    #     block = [['\[', '\]'], ['$$', '$$']]
+    #     inline = [['\(', '\)'], ['$', '$']]
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
@@ -221,11 +228,6 @@ enableEmoji = true
       # whether to use HTML tags directly in the document
       unsafe = true
       xhtml = false
-  # Table Of Contents settings
-  [markup.tableOfContents]
-    ordered = false
-    startLevel = 2
-    endLevel = 6
 
 # -------------------------------------------------------------------------------------
 # Sitemap Configuration
@@ -234,6 +236,7 @@ enableEmoji = true
 
 [sitemap]
   changefreq = "weekly"
+  disable = false
   filename = "sitemap.xml"
   priority = 0.5
 
@@ -325,11 +328,12 @@ enableEmoji = true
 # taxonomy = ["html"]
 # term = ["html", "rss"]
 [outputs]
-  home = ["html", "rss", "archives", "offline", "search"]
+  _merge = "shallow"
+  home = ["html", "rss", "jsonfeed", "archives", "offline", "search"]
   page = ["html", "markdown"]
-  section = ["html", "rss"]
+  section = ["html", "rss", "jsonfeed"]
   taxonomy = ["html"]
-  term = ["html", "rss"]
+  term = ["html", "rss", "jsonfeed"]
 
 # -------------------------------------------------------------------------------------
 # Taxonomies Configuration
@@ -337,6 +341,7 @@ enableEmoji = true
 # -------------------------------------------------------------------------------------
 
 [taxonomies]
+  _merge = "shallow"
   category = "categories"
   tag = "tags"
   collection = "collections"
@@ -350,9 +355,9 @@ enableEmoji = true
   # FixIt 0.2.15 | CHANGED FixIt theme version
   version = "0.3.X" # e.g. "0.2.X", "0.2.15", "v0.2.15" etc.
   # site description
-  description = "https://attajak.pages.dev"
+  description = "attajak.pages.dev"
   # site keywords
-  keywords = ["hugo", "fixit", "attajak", "pages", "dev"]
+  keywords = []
   # site default theme ["light", "dark", "auto"]
   defaultTheme = "auto"
   # which hash function used for SRI, when empty, no SRI is used
@@ -361,11 +366,13 @@ enableEmoji = true
   # NEW date format
   dateFormat = "2006-01-02"
   # website images for Open Graph and Twitter Cards
-  images = []
+  images = ["/images/attajak.jpg"]
   # FixIt 0.2.12 | NEW enable PWA
-  enablePWA = false
+  enablePWA = true
   # FixIt 0.2.14 | NEW whether to add external Icon for external links automatically
   externalIcon = false
+  # FixIt 0.3.13 | NEW whether to capitalize titles
+  capitalizeTitles = true
   # FixIt 0.3.0 | NEW whether to add site title to the title of every page
   # remember to set up your site title in `hugo.toml` (e.g. title = "title")
   withSiteTitle = true
@@ -374,6 +381,8 @@ enableEmoji = true
   # FixIt 0.3.0 | NEW whether to add site subtitle to the title of index page
   # remember to set up your site subtitle by `params.header.subtitle.name`
   indexWithSubtitle = false
+  # FixIt 0.3.13 | NEW whether to show summary in plain text
+  summaryPlainify = false
   # FixIt 0.2.14 | NEW FixIt will, by default, inject a theme meta tag in the HTML head on the home page only.
   # You can turn it off, but we would really appreciate if you don’t, as this is a good way to watch FixIt's popularity on the rise.
   disableThemeInject = false
@@ -382,7 +391,7 @@ enableEmoji = true
   [params.author]
     name = "Attajak Janrak"
     email = "janrak@gmail.com"
-    link = "https://attajak.pages.dev"
+    link = "https://github.com/attajak"
     avatar = ""
 
   # FixIt 0.3.0 | NEW public Git repository information only then enableGitInfo is true
@@ -403,7 +412,7 @@ enableEmoji = true
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
-    svgFavicon = "/favicon.ico" # "/images/fixit.min.svg"
+    svgFavicon = "/favicon.ico"
     # Safari mask icon color
     iconColor = "#5bbad5"
     # Windows v8-10 tile color
@@ -416,7 +425,7 @@ enableEmoji = true
   # Search config
   [params.search]
     enable = true
-    # type of search engine ["algolia", "fuse"]
+    # type of search engine ["algolia", "fuse", "cse"]
     type = "fuse"
     # max index length of the chunked content
     contentLength = 4000
@@ -446,6 +455,19 @@ enableEmoji = true
       useExtendedSearch = false
       ignoreFieldNorm = false
 
+  # FixIt 0.3.16 | NEW Custom Search Engine (CSE)
+  [params.cse]
+    # Search Engine: ["google", "bing"]
+    engine = ""
+    # Search results page URL (layout: search)
+    resultsPage = "/search/"
+    # Google: https://programmablesearchengine.google.com/
+    # Google Custom Search Engine Context
+    [params.cse.google]
+      cx = ""
+    # Bing (Unsupported): https://www.customsearch.ai/
+    [params.cse.bing]
+
   # Header config
   [params.header]
     # FixIt 0.2.13 | CHANGED desktop header mode ["sticky", "normal", "auto"]
@@ -455,7 +477,7 @@ enableEmoji = true
     # Header title config
     [params.header.title]
       # URL of the LOGO
-      logo = "/favicon.ico" # "/images/fixit.min.svg"
+      logo = "/favicon.ico"
       # title name
       name = "Attajak"
       # you can add extra information before the name (HTML format is supported), such as icons
@@ -467,7 +489,7 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = "Attajak Janrak"
+      name = "attajak.pages.dev"
       # whether to use typeit animation for subtitle name
       typeit = false
 
@@ -476,6 +498,9 @@ enableEmoji = true
     enable = true
     sticky = true
     showHome = true
+    # FixIt 0.3.13 | NEW
+    separator = "/"
+    capitalize = true
 
   # FixIt 0.3.10 | NEW Post navigation config
   [params.navigation]
@@ -514,10 +539,10 @@ enableEmoji = true
     # FixIt 0.2.17 | NEW footer lines order, optional values: ["first", 0, 1, 2, 3, 4, 5, "last"]
     [params.footer.order]
       powered = 0
-      copyright = 0
-      statistics = 1
-      visitor = 1
-      beian = 2
+      copyright = 1
+      statistics = 2
+      visitor = 3
+      beian = 4
 
   # FixIt 0.3.0 | NEW Archives page config (all pages of posts type)
   [params.archives]
@@ -538,13 +563,6 @@ enableEmoji = true
       limit = -1
       # whether to show the full text content in feed.
       fullText = false
-    # FixIt 0.2.13 | NEW recently updated pages config
-    # TODO refactor to support archives, section, taxonomy and term
-    [params.section.recentlyUpdated]
-      enable = false
-      rss = false
-      days = 30
-      maxCount = 10
 
   # Term list (category or tag) page config
   [params.list]
@@ -558,6 +576,14 @@ enableEmoji = true
       limit = -1
       # whether to show the full text content in feed.
       fullText = false
+
+  # FixIt 0.3.13 | NEW recently updated pages config for archives, section and term list
+  [params.recentlyUpdated]
+    archives = true
+    section = true
+    list = true
+    days = 30
+    maxCount = 10
 
   # FixIt 0.2.17 | NEW TagCloud config for tags page
   [params.tagcloud]
@@ -575,13 +601,13 @@ enableEmoji = true
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = "janrak@gmail.com"
       # URL of avatar shown in home page
-      avatarURL = ""
+      avatarURL = "/about/"
       # FixIt 0.2.17 | NEW identifier of avatar menu link
       avatarMenu = ""
       # title shown in home page (HTML format is supported)
       title = "Attajak Janrak"
-      # subtitle shown in home page
-      subtitle = "https://attajak.pages.dev/"
+      # subtitle shown in home page (HTML format is supported)
+      subtitle = "ชื่อคิง เกิด ๘ สิงหาฯ เลือดกรุ๊ป เอ"
       # whether to use typeit animation for subtitle
       typeit = true
       # whether to show social links
@@ -597,21 +623,21 @@ enableEmoji = true
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
     GitHub = "attajak"
-    Linkedin = "attajak"
+    Linkedin = ""
     Twitter = "attajak"
-    Instagram = "attajak"
+    Instagram = ""
     Facebook = "attajak"
     Telegram = ""
     Medium = ""
     Gitlab = "attajak"
     Youtubelegacy = ""
-    Youtubecustom = "@attajak"
+    Youtubecustom = ""
     Youtubechannel = ""
-    Tumblr = "attajak"
+    Tumblr = ""
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    Reddit = "attajak"
+    Reddit = ""
     Codepen = ""
     FreeCodeCamp = ""
     Bitbucket = ""
@@ -619,11 +645,11 @@ enableEmoji = true
     Weibo = ""
     Odnoklassniki = ""
     VK = ""
-    Flickr = "attajakz"
+    Flickr = ""
     Xing = ""
     Snapchat = ""
-    Soundcloud = "attajak"
-    Spotify = "attajak"
+    Soundcloud = ""
+    Spotify = ""
     Bandcamp = ""
     Paypal = "attajak"
     Fivehundredpx = ""
@@ -634,11 +660,11 @@ enableEmoji = true
     Hackernews = ""
     Kickstarter = ""
     Patreon = ""
-    Steam = "attajak"
-    Twitch = "attajak"
+    Steam = ""
+    Twitch = ""
     Strava = ""
-    Skype = "attajak"
-    Whatsapp = ""
+    Skype = ""
+    Whatsapp = "+66627824869"
     Zhihu = ""
     Douban = ""
     Angellist = ""
@@ -651,26 +677,26 @@ enableEmoji = true
     Vine = ""
     Googlescholar = ""
     Researchgate = ""
-    Mastodon = "attajak"
+    Mastodon = ""
     Thingiverse = ""
     Devto = ""
     Gitea = ""
     XMPP = ""
     Matrix = ""
-    Bilibili = "attajak"
+    Bilibili = ""
     ORCID = ""
     Liberapay = ""
     Ko-Fi = ""
     BuyMeaCoffee = ""
-    Linktree = "attajak"
+    Linktree = ""
     QQ = ""
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
     CSDN = ""
-    Discord = "attajak"
+    Discord = ""
     DiscordInvite = ""
     Lichess = ""
-    Pleroma = "attajak"
+    Pleroma = ""
     Kaggle = ""
     MediaWiki= ""
     Plume = ""
@@ -679,7 +705,9 @@ enableEmoji = true
     Feishu = ""
     TryHackMe = ""
     Douyin = ""
-    TikTok = "attajak"
+    TikTok = ""
+    Credly = ""
+    Bluesky = ""
     Phone = "+66627824869"
     Email = "janrak@gmail.com"
     RSS = true
@@ -709,6 +737,25 @@ enableEmoji = true
   [params.mermaid]
     # For values, see https://mermaid.js.org/config/theming.html#available-themes
     themes = ["default", "dark"]
+
+  # FixIt 0.3.13 | NEW Admonitions custom config
+  # See https://fixit.lruihao.cn/documentation/content-management/shortcodes/extended/admonition/#custom-admonitions
+  # syntax: <type> = <icon>
+  [params.admonition]
+    # ban = "fa-solid fa-ban"
+  
+  # FixIt 0.3.14 | NEW Task lists custom config
+  # See https://fixit.lruihao.cn/documentation/content-management/advanced/#custom-task-lists
+  # syntax: <sign> = <icon>
+  [params.taskList]
+    # tip = "fa-regular fa-lightbulb"
+
+  # FixIt 0.3.15 | NEW version shortcode config
+  [params.repoVersion]
+    # url prefix for the release tag
+    url = "https://github.com/hugo-fixit/FixIt/releases/tag/v"
+    # project name
+    name = "FixIt"
 
   # FixIt 0.2.12 | NEW PanguJS config
   [params.pangu]
@@ -763,9 +810,9 @@ enableEmoji = true
   # Site SEO config
   [params.seo]
     # image URL
-    image = "/images/attajak.jpg"
+    image = ""
     # thumbnail URL
-    thumbnailUrl = "https://attajak.pages.dev"
+    thumbnailUrl = ""
 
   # Analytics config
   [params.analytics]
@@ -780,10 +827,35 @@ enableEmoji = true
       id = ""
       # server url for your tracker if you're self hosting
       server = ""
+    # FixIt 0.3.16 | NEW Baidu Analytics
+    [params.analytics.baidu]
+      id = ""
+    # FixIt 0.3.16 | NEW Umami Analytics
+    [params.analytics.umami]
+      data_website_id = ""
+      src = ""
+      data_host_url = ""
+      data_domains = ""
+    # FixIt 0.3.16 | NEW Plausible Analytics
+    [params.analytics.plausible]
+      data_domain = ""
+      src = ""
+    # FixIt 0.3.16 | NEW Cloudflare Analytics
+    [params.analytics.cloudflare]
+      token = ""
+    # FixIt 0.3.16 | NEW Splitbee Analytics
+    [params.analytics.splitbee]
+      enable = false
+      # no cookie mode
+      no_cookie = true
+      # respect the do not track setting of the browser
+      do_not_track = true
+      # token(optional), more info on https://splitbee.io/docs/embed-the-script
+      data_token = ""
 
   # Cookie consent config
   [params.cookieconsent]
-    enable = true
+    enable = false
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
@@ -855,6 +927,85 @@ enableEmoji = true
     limit = 10
     # whether to show the full text content in feed.
     fullText = true
+    # Site Challenge for Follow: https://follow.is/
+    [params.feed.follow]
+      feedId = ""
+      userId = ""
+
+  # FixIt 0.3.12 | NEW Custom partials config
+  # Custom partials must be stored in the /layouts/partials/ directory.
+  # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
+  [params.customPartials]
+    head = [
+      "inject/fixit-docs-bookmark.html",
+      "inject/component-projects.html",
+      "inject/shortcode-rewards.html",
+    ]
+    menuDesktop = [
+      "inject/translate-menu-desktop.html",
+    ]
+    menuMobile = [
+      "inject/translate-menu-mobile.html",
+    ]
+    profile = []
+    aside = []
+    comment = []
+    footer = []
+    widgets = []
+    assets = [
+      "inject/cmpt-flyfish.html",
+      "inject/cmpt-mdevtools.html",
+      "inject/cmpt-translate.html",
+      "inject/shortcode-caniuse.html",
+    ]
+    postFooterBefore = []
+    postFooterAfter = []
+
+  # FixIt bundle
+  # cmpt-flyfish
+  [params.flyfish]
+    enable = true
+    light = "rgb(0 119 190 / 10%)"
+    dark = "rgb(255 255 255 / 10%)"
+
+  # Mobile Devtools config
+  [params.mDevtools]
+    enable = true
+    # "eruda", "vConsole" supported
+    type = "eruda"
+
+  # Auto translation configuration
+  # See: https://github.com/xnx3/translate/
+  [params.autoTranslate]
+    enable = false
+    # The translation service provider, ['client.edge', 'translate.service']
+    # See: https://translate.zvo.cn/43086.html
+    service = 'client.edge'
+    # List of language ID to translate to, e.g. ["english", "chinese_simplified", "chinese_traditional", ...]
+    # See the full language list: https://api.translate.zvo.cn/language.json
+    languages = []
+    # Element IDs that needs to be ignored for translation
+    ignoreID = []
+    # Class names that need to be ignored for translation
+    ignoreClass = []
+    # Tag names that need to be ignored for translation     ignoreTag = []
+    # Whether to detect the local language
+    # If your site itself is multilingual in Hugo, it is not recommended to enable this feature!
+    detectLocalLanguage = false
+
+  # Content adapters config for component projects
+  [params.projectsAdapters]
+    enable = false
+    # Whether to show only public repos
+    onlyPublic = true
+    # Default categories and collections
+    categories = []
+    collections = []
+    # Ignore repos in the ignore list
+    ignoreList = []
+    [params.projectsAdapters.params]
+      hiddenFromHomePage = true
+      # more font matter here ...
 
   # FixIt 0.2.15 | NEW Developer options
   # Select the scope named `public_repo` to generate personal access token,
@@ -930,6 +1081,10 @@ enableEmoji = true
       auto = true
       # FixIt 0.2.13 | NEW position of TOC ["left", "right"]
       position = "right"
+      # FixIt 0.3.12 | NEW supersede `markup.tableOfContents` settings
+      ordered = false
+      startLevel = 2
+      endLevel = 6
     # FixIt 0.2.13 | NEW Display a message at the beginning of an article to warn the reader that its content might be expired
     [params.page.expirationReminder]
       enable = false
@@ -943,7 +1098,7 @@ enableEmoji = true
     [params.page.heading]
       # FixIt 0.3.3 | NEW whether to capitalize automatic text of headings
       capitalize = false
-      # used with `markup.tableOfContents.ordered` parameter
+      # FixIt 0.3.12 | CHANGED must set `params.page.toc.ordered` to true
       [params.page.heading.number]
         # whether to enable auto heading numbering
         enable = false
@@ -984,9 +1139,9 @@ enableEmoji = true
       # access token of Mapbox GL JS
       accessToken = ""
       # style for the light theme
-      lightStyle = "mapbox://styles/mapbox/light-v9"
+      lightStyle = "mapbox://styles/mapbox/light-v11"
       # style for the dark theme
-      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      darkStyle = "mapbox://styles/mapbox/dark-v11"
       # whether to add NavigationControl
       navigation = true
       # whether to add GeolocateControl
@@ -1023,16 +1178,16 @@ enableEmoji = true
       enable = true
       Twitter = true
       Facebook = true
-      Linkedin = false
-      Whatsapp = false
-      Pinterest = false
-      Tumblr = false
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
+      Tumblr = true
       HackerNews = false
       Reddit = false
       VK = false
       Buffer = false
       Xing = false
-      Line = false
+      Line = true
       Instapaper = false
       Pocket = false
       Flipboard = false
@@ -1041,8 +1196,8 @@ enableEmoji = true
       Blogger = false
       Baidu = false
       Odnoklassniki = false
-      Evernote = false
-      Skype = false
+      Evernote = true
+      Skype = true
       Trello = false
       Mix = false
     # FixIt 0.2.15 | CHANGED Comment config
@@ -1206,4 +1361,4 @@ enableEmoji = true
       # Publisher info
       [params.page.seo.publisher]
         name = "Attajak Janrak"
-        logoUrl = "https://github.com/attajak"
+        logoUrl = "/favicon.ico"
