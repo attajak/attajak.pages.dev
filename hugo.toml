@@ -988,10 +988,12 @@ enableEmoji = true
     ignoreID = []
     # Class names that need to be ignored for translation
     ignoreClass = []
-    # Tag names that need to be ignored for translation     ignoreTag = []
+    # Tag names that need to be ignored for translation
+    ignoreTag = []
     # Whether to detect the local language
     # If your site itself is multilingual in Hugo, it is not recommended to enable this feature!
     detectLocalLanguage = false
+    cdn = "" # translate.js CDN
 
   # Content adapters config for component projects
   [params.projectsAdapters]
