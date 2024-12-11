@@ -24,8 +24,6 @@ languageCode = "en"
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
 hasCJKLanguage = false
-# default amount of posts in each pages
-# paginate = 12
 # copyright description used only for seo schema
 copyright = ""
 # whether to use robots.txt
@@ -34,9 +32,11 @@ enableRobotsTXT = true
 enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
-
+# default amount of posts in each pages
 [pagination]
-  pagerSize = 12
+  disableAliases = false
+  pagerSize = 10
+  path = "page"
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
@@ -103,7 +103,7 @@ enableEmoji = true
     url = "/posts"
     weight = 20
     [menu.main.params]
-      icon = "fa-solid fa-pencil"
+      icon = "fa-solid fa-pen"
   [[menu.main]]
     identifier = "about"
     name = "About"
@@ -489,7 +489,7 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = "attajak.pages.dev"
+      name = ""
       # whether to use typeit animation for subtitle name
       typeit = false
 
@@ -623,33 +623,33 @@ enableEmoji = true
   # FixIt 0.2.16 | CHANGED Social config about the author
   [params.social]
     GitHub = "attajak"
-    Linkedin = ""
+    Linkedin = "attajak"
     Twitter = "attajak"
-    Instagram = ""
+    Instagram = "attajak"
     Facebook = "attajak"
-    Telegram = ""
-    Medium = ""
+    Telegram = "attajak"
+    Medium = "attajak"
     Gitlab = "attajak"
     Youtubelegacy = ""
     Youtubecustom = ""
     Youtubechannel = ""
-    Tumblr = ""
+    Tumblr = "attajak"
     Quora = ""
     Keybase = ""
     Pinterest = ""
-    Reddit = ""
-    Codepen = ""
+    Reddit = "attajak"
+    Codepen = "attajak"
     FreeCodeCamp = ""
-    Bitbucket = ""
+    Bitbucket = "attajak"
     Stackoverflow = ""
     Weibo = ""
     Odnoklassniki = ""
     VK = ""
-    Flickr = ""
+    Flickr = "attajakz"
     Xing = ""
     Snapchat = ""
-    Soundcloud = ""
-    Spotify = ""
+    Soundcloud = "attajak"
+    Spotify = "attajak"
     Bandcamp = ""
     Paypal = "attajak"
     Fivehundredpx = ""
@@ -660,10 +660,10 @@ enableEmoji = true
     Hackernews = ""
     Kickstarter = ""
     Patreon = ""
-    Steam = ""
-    Twitch = ""
+    Steam = "attajak"
+    Twitch = "attajak"
     Strava = ""
-    Skype = ""
+    Skype = "attajak"
     Whatsapp = "+66627824869"
     Zhihu = ""
     Douban = ""
@@ -679,21 +679,21 @@ enableEmoji = true
     Researchgate = ""
     Mastodon = ""
     Thingiverse = ""
-    Devto = ""
+    Devto = "attajak"
     Gitea = ""
     XMPP = ""
     Matrix = ""
-    Bilibili = ""
+    Bilibili = "attajak"
     ORCID = ""
     Liberapay = ""
     Ko-Fi = ""
     BuyMeaCoffee = ""
-    Linktree = ""
+    Linktree = "attajak"
     QQ = ""
     QQGroup = "" # https://qun.qq.com/join.html
     Diaspora = ""
     CSDN = ""
-    Discord = ""
+    Discord = "attajak"
     DiscordInvite = ""
     Lichess = ""
     Pleroma = ""
@@ -705,9 +705,9 @@ enableEmoji = true
     Feishu = ""
     TryHackMe = ""
     Douyin = ""
-    TikTok = ""
+    TikTok = "attajak"
     Credly = ""
-    Bluesky = ""
+    Bluesky = "attajak"
     Phone = "+66627824869"
     Email = "janrak@gmail.com"
     RSS = true
