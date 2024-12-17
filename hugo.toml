@@ -23,9 +23,9 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
+hasCJKLanguage = true
 # copyright description used only for seo schema
-copyright = ""
+copyright = "[Attajak Janrak](https://github.com/attajak)"
 # whether to use robots.txt
 enableRobotsTXT = true
 # whether to use git commit log
@@ -357,7 +357,7 @@ enableEmoji = true
   # site description
   description = "attajak.pages.dev"
   # site keywords
-  keywords = []
+  keywords = ["Hugo", "FixIt", "Attajak", "Pages", "Dev", "CloudFlare", "GitHub"]
   # site default theme ["light", "dark", "auto"]
   defaultTheme = "auto"
   # which hash function used for SRI, when empty, no SRI is used
@@ -426,11 +426,11 @@ enableEmoji = true
   [params.search]
     enable = true
     # type of search engine ["algolia", "fuse", "cse"]
-    type = "fuse"
+    type = "cse"
     # max index length of the chunked content
     contentLength = 4000
     # placeholder of the search bar
-    placeholder = ""
+    placeholder = "Search..."
     # max number of results length
     maxResultLength = 10
     # snippet length of the result
@@ -458,13 +458,13 @@ enableEmoji = true
   # FixIt 0.3.16 | NEW Custom Search Engine (CSE)
   [params.cse]
     # Search Engine: ["google", "bing"]
-    engine = ""
+    engine = "google"
     # Search results page URL (layout: search)
     resultsPage = "/search/"
     # Google: https://programmablesearchengine.google.com/
     # Google Custom Search Engine Context
     [params.cse.google]
-      cx = ""
+      cx = "37d030b00a48241c2"
     # Bing (Unsupported): https://www.customsearch.ai/
     [params.cse.bing]
 
@@ -489,7 +489,7 @@ enableEmoji = true
     # FixIt 0.2.12 | NEW Header subtitle config
     [params.header.subtitle]
       # subtitle name
-      name = ""
+      name = "attajak.pages.dev"
       # whether to use typeit animation for subtitle name
       typeit = false
 
@@ -639,7 +639,7 @@ enableEmoji = true
     Pinterest = ""
     Reddit = "attajak"
     Codepen = "attajak"
-    FreeCodeCamp = ""
+    FreeCodeCamp = "attajak"
     Bitbucket = "attajak"
     Stackoverflow = ""
     Weibo = ""
@@ -647,7 +647,7 @@ enableEmoji = true
     VK = ""
     Flickr = "attajakz"
     Xing = ""
-    Snapchat = ""
+    Snapchat = "attajak"
     Soundcloud = "attajak"
     Spotify = "attajak"
     Bandcamp = ""
@@ -674,7 +674,7 @@ enableEmoji = true
     Behance = ""
     Dribbble = ""
     Wordpress = "attajak"
-    Vine = ""
+    Vine = "attajak"
     Googlescholar = ""
     Researchgate = ""
     Mastodon = ""
@@ -810,9 +810,9 @@ enableEmoji = true
   # Site SEO config
   [params.seo]
     # image URL
-    image = ""
+    image = "/images/attajak.jpg"
     # thumbnail URL
-    thumbnailUrl = ""
+    thumbnailUrl = "https://attajak.pages.dev"
 
   # Analytics config
   [params.analytics]
@@ -889,7 +889,7 @@ enableEmoji = true
     enable = true
     # Gravatar host, default: "www.gravatar.com"
     host = "www.gravatar.com" # ["cravatar.cn", "gravatar.loli.net", ...]
-    style = "" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
+    style = "robohash" # ["", "mp", "identicon", "monsterid", "wavatar", "retro", "blank", "robohash"]
 
   # FixIt 0.2.16 | NEW Back to top
   [params.backToTop]
@@ -899,7 +899,7 @@ enableEmoji = true
 
   # FixIt 0.2.16 | NEW Reading progress bar
   [params.readingProgress]
-    enable = false
+    enable = true
     # Available values: ["left", "right"]
     start = "left"
     # Available values: ["top", "bottom"]
@@ -1013,9 +1013,9 @@ enableEmoji = true
   # Select the scope named `public_repo` to generate personal access token,
   # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
   [params.dev]
-    enable = false
+    enable = true
     # Check for updates
-    c4u = false
+    c4u = true
 
   # Page config
   [params.page]
@@ -1185,7 +1185,7 @@ enableEmoji = true
       Pinterest = true
       Tumblr = true
       HackerNews = false
-      Reddit = false
+      Reddit = true
       VK = false
       Buffer = false
       Xing = false
@@ -1193,7 +1193,7 @@ enableEmoji = true
       Instapaper = false
       Pocket = false
       Flipboard = false
-      Weibo = true
+      Weibo = false
       Myspace = false
       Blogger = false
       Baidu = false
