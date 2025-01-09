@@ -1,0 +1,23 @@
+{
+  "name": "attajak.pages.dev",
+  "version": "1.0.0",
+  "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
+  "main": "index.js",
+  "scripts": {
+    "build": "hugo --gc --minify --logLevel info",
+    "server": "hugo server -D --disableFastRender --navigateToChanged --bind 0.0.0.0 -b http://localhost --logLevel info -O",
+    "server:production": "npm run server -- --environment production",
+    "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
+    "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attajak/attajak.pages.dev.git"
+  },
+  "author": "attajak (https://github.com/attajak)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/attajak/attajak.pages.dev/issues"
+  },
+  "homepage": "https://github.com/attajak/attajak.pages.dev#readme"
+}
