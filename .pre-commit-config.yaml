@@ -1,0 +1,21 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: trailing-whitespace
+        entry: trailing-whitespace-fixer
+        args: [--markdown-linebreak-ext=md]
+      - id: end-of-file-fixer
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+      - id: check-added-large-files
+        args: [--enforce-all]
+      - id: check-json
+      - id: check-toml
+      - id: double-quote-string-fixer
+  - repo: https://github.com/asottile/add-trailing-comma
+    rev: v3.1.0
+    hooks:
+      - id: add-trailing-comma

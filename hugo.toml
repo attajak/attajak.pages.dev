@@ -743,7 +743,7 @@ enableEmoji = true
   # syntax: <type> = <icon>
   [params.admonition]
     # ban = "fa-solid fa-ban"
-  
+
   # FixIt 0.3.14 | NEW Task lists custom config
   # See https://fixit.lruihao.cn/documentation/content-management/advanced/#custom-task-lists
   # syntax: <sign> = <icon>
@@ -908,7 +908,7 @@ enableEmoji = true
     light = ""
     dark = ""
     height = "2px"
-  
+
   # FixIt 0.2.17 | NEW Progress bar in the top during page loading.
   # For more information: https://github.com/CodeByZach/pace
   [params.pace]
@@ -920,7 +920,7 @@ enableEmoji = true
     # ["barber-shop", "big-counter", "bounce", "center-atom", "center-circle", "center-radar", "center-simple",
     # "corner-indicator", "fill-left", "flash", "flat-top", "loading-bar", "mac-osx", "material", "minimal"]
     theme = "minimal"
-  
+
   # FixIt 0.3.10 | NEW Global Feed config for RSS, Atom and JSON feed.
   [params.feed]
     # The number of posts to include in the feed. If set to -1, all posts.
