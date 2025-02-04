@@ -6,7 +6,7 @@ Deploy to CloudFlare Pages
 - [fixit-bundle](https://github.com/hugo-fixit/fixit-bundle)\
  🌲 Bundles the FixIt core theme and all hugo-fixit components into a single component.
 - [cmpt-flyfish](https://github.com/hugo-fixit/cmpt-flyfish)\
- 🐟 一个 canvas 实现的小鱼游动动画效果。
+ 🐟 一个 canvas 实现的小��游动动画效果。
 - [cmpt-mdevtools](https://github.com/hugo-fixit/cmpt-mdevtools)\
  Mobile devtools component powered by vConsole and eruda.
 - [cmpt-translate](https://github.com/hugo-fixit/cmpt-translate)\
