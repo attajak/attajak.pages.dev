@@ -1,13 +1,14 @@
 {
   "name": "attajak.pages.dev",
+  "private": "true",
   "version": "1.0.0",
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo submodule](https://gohugo.io/hugo-modules/) feature to load the theme.",
   "main": "index.js",
   "scripts": {
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F --disableFastRender --navigateToChanged --renderToMemory --bind 0.0.0.0 -b http://localhost --logLevel info -O",
-    "server:production": "npm run server -- --environment production",
+    "dev": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313/",
+    "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
     "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
     "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
   },
