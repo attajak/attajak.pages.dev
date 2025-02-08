@@ -1,5 +1,7 @@
-# <https://attajak.pages.dev/>
-Deploy to CloudFlare Pages
+# [attajak.pages.dev](https://attajak.pages.dev/)
+
+## [Preview on GitHub-Pages](https://attajak.github.io/attajak.pages.dev/)
+[![Hugo build and deploy](https://github.com/attajak/attajak.pages.dev/actions/workflows/deploy.yml/badge.svg)](https://github.com/attajak/attajak.pages.dev/actions/workflows/deploy.yml)
 
 ## FixIt component list
 <!-- HUGO_FIXIT_COMPONENTS:START -->
