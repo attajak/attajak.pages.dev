@@ -6,7 +6,7 @@ require (
 	github.com/hugo-fixit/FixIt v0.3.16 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.0.1 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.0.1 // indirect
-	github.com/hugo-fixit/cmpt-translate v1.5.3 // indirect
+	github.com/hugo-fixit/cmpt-translate v1.5.4 // indirect
 	github.com/hugo-fixit/component-projects v1.5.3 // indirect
 	github.com/hugo-fixit/fixit-bundle v1.4.3 // indirect
 	github.com/hugo-fixit/hugo-json-feed v1.0.2 // indirect
