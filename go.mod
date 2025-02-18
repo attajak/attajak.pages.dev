@@ -1,4 +1,4 @@
-module github.com/attajak/attajak.pages.app
+module github.com/attajak/attajak.pages.dev
 
 go 1.20
 

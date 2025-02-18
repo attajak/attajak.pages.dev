@@ -1,20 +1,24 @@
-- title: My developed
-  description: Below are some open source works I have developed.
-  contentAdapters: false
+- title: Jekyll
+  description: GitHub Pages
+  contentAdapters: true
   categories:
-    - foo
+    - Jekyll
   collections:
-    - developed
-  totalStars: false # whether to count total stars
+    - Static Site Generators
+  totalStars: true # whether to count total stars
   repos:
-    - hugo-fixit/FixIt
-- title: My contributed
-  description: Below are some open source works I have contributed to.
-  contentAdapters: false
+    - attajak/attajak.github.io
+    - attajak/blog
+- title: Hugo
+  description: Hugo static site generators
+  contentAdapters: true
   categories:
-    - bar
+    - Hugo
   collections:
-    - contributed
-  totalStars: false
+    - Static Site Generators
+  totalStars: true
   repos:
-    - gohugoio/hugo
+    - attajak/attajak.web.app
+    - attajak/attajak.pages.dev
+    - attajak/attajak.vercel.app
+    - attajak/attajak.netlify.app
