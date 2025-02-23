@@ -19,11 +19,15 @@ on:
     types:
       - completed
   workflow_dispatch:
+
 jobs:
   Actions-Hugo-Deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
 
       - name: Cache Hugo resources
         uses: actions/cache@v4
