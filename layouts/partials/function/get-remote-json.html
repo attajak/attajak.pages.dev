@@ -1,0 +1,12 @@
+{{- $response := dict -}}
+{{- with try (resources.GetRemote .URL .OPTIONS) -}}
+  {{- with .Err -}}
+    {{- erroridf "error-get-remote-json" "%s" . -}}
+  {{- else with .Value -}}
+    {{- $response = .Content | transform.Unmarshal -}}
+  {{- else -}}
+    {{- erroridf "error-get-remote-json" "Unable to get remote resource %q" $.URL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $response -}}
