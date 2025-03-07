@@ -15,7 +15,4 @@ repos:
       - id: check-json
       - id: check-toml
       - id: double-quote-string-fixer
-  - repo: https://github.com/asottile/add-trailing-comma
-    rev: v3.1.0
-    hooks:
-      - id: add-trailing-comma
+      - id: mixed-line-ending
