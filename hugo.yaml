@@ -3,7 +3,7 @@ baseURL: /attajak.pages.dev/
 defaultContentLanguage: en
 languageCode: en
 languageName: English
-hasCJKLanguage: true
+hasCJKLanguage: false
 copyright: '[Attajak Janrak](https://github.com/attajak)'
 enableRobotsTXT: true
 enableGitInfo: true
@@ -12,6 +12,7 @@ pagination:
   disableAliases: false
   pagerSize: 10
   path: page
+
 menu:
   main:
     - identifier: archives
@@ -78,6 +79,7 @@ menu:
       weight: 50
       params:
         icon: fa-solid fa-envelope
+
 related:
   includeNewer: false
   threshold: 80
@@ -108,12 +110,14 @@ related:
       name: fragmentrefs
       type: fragments
       weight: 80
+
 module:
   hugoVersion:
     extended: true
     min: 0.134.1
   imports:
     - path: github.com/hugo-fixit/fixit-bundle
+
 markup:
   _merge: shallow
   highlight:
@@ -152,19 +156,24 @@ markup:
       hardWraps: false
       unsafe: true
       xhtml: false
+
 sitemap:
   changefreq: weekly
   disable: false
   filename: sitemap.xml
   priority: 0.5
+
 Permalinks:
   posts: 'posts/:slugorcontentbasename'
+
 privacy:
   x:
     enableDNT: true
   youtube:
     privacyEnhanced: true
+
 mediaTypes: {}
+
 outputFormats:
   archives:
     path: archives
@@ -201,6 +210,7 @@ outputFormats:
     isPlainText: true
     isHTML: false
     permalinkable: true
+
 outputs:
   _merge: shallow
   home:
@@ -223,11 +233,13 @@ outputs:
     - html
     - rss
     - jsonfeed
+
 taxonomies:
   _merge: shallow
   category: categories
   tag: tags
   collection: collections
+
 params:
   version: 0.3.X
   description: attajak.pages.dev
