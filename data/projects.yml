@@ -1,5 +1,5 @@
 - title: Jekyll
-  description: GitHub Pages
+  description: Jekyll
   contentAdapters: true
   categories:
     - Jekyll
@@ -10,7 +10,7 @@
     - attajak/attajak.github.io
     - attajak/blog
 - title: Hugo
-  description: Hugo static site generators
+  description: Hugo
   contentAdapters: true
   categories:
     - Hugo

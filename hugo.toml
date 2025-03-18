@@ -23,7 +23,7 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = true
+hasCJKLanguage = false
 # copyright description used only for seo schema
 copyright = "[Attajak Janrak](https://github.com/attajak)"
 # whether to use robots.txt
@@ -37,6 +37,13 @@ enableEmoji = true
   disableAliases = false
   pagerSize = 10
   path = "page"
+# ignore some build errors
+ignoreLogs = [
+  "error-get-remote-image",
+  "error-get-remote-json",
+  "error-remote-getjson",
+  "error-missing-instagram-accesstoken"
+]
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
@@ -108,16 +115,23 @@ enableEmoji = true
     identifier = "about"
     name = "About"
     url = "/about/"
-    weight = 30
+    weight = 40
     [menu.main.params]
       icon = "fa-solid fa-signature"
   [[menu.main]]
     identifier = "contact"
     name = "Contact"
     url = "/contact/"
-    weight = 40
+    weight = 50
     [menu.main.params]
       icon = "fa-solid fa-envelope"
+  [[menu.main]]
+    identifier = "projects"
+    name = "Projects"
+    url = "/projects/"
+    weight = 30
+    [menu.main.params]
+      icon = "fa-solid fa-laptop-code"
 
 # -------------------------------------------------------------------------------------
 # Related content Configuration
@@ -265,9 +279,9 @@ enableEmoji = true
 # See: https://gohugo.io/templates/output-formats/#media-types
 # -------------------------------------------------------------------------------------
 
-[mediaTypes]
+# [mediaTypes]
   # [mediaTypes."application/feed+json"]
-  #   suffixes = ["json"]
+    # suffixes = ["json"]
 
 # -------------------------------------------------------------------------------------
 # Output Format Definitions
@@ -855,7 +869,7 @@ enableEmoji = true
 
   # Cookie consent config
   [params.cookieconsent]
-    enable = false
+    enable = true
     # text strings used for Cookie consent banner
     [params.cookieconsent.content]
       message = ""
@@ -938,7 +952,6 @@ enableEmoji = true
   [params.customPartials]
     head = [
       "inject/fixit-docs-bookmark.html",
-      "inject/component-projects.html",
       "inject/shortcode-rewards.html",
     ]
     menuDesktop = [
@@ -956,8 +969,13 @@ enableEmoji = true
       "inject/cmpt-flyfish.html",
       "inject/cmpt-mdevtools.html",
       "inject/cmpt-translate.html",
+      "inject/component-projects.html",
       "inject/shortcode-caniuse.html",
     ]
+    postTocBefore = []
+    postTocAfter = []
+    postContentBefore = []
+    postContentAfter = []
     postFooterBefore = []
     postFooterAfter = []
 
@@ -1013,9 +1031,9 @@ enableEmoji = true
   # Select the scope named `public_repo` to generate personal access token,
   # Configure with environment variable `HUGO_PARAMS_GHTOKEN=xxx`, see https://gohugo.io/functions/os/getenv/#examples
   [params.dev]
-    enable = true
+    enable = false
     # Check for updates
-    c4u = true
+    c4u = false
 
   # Page config
   [params.page]

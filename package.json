@@ -7,7 +7,7 @@
   "scripts": {
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
-    "server": "hugo server -D -E -F -O --disableFastRender --navigateToChanged --renderToMemory --ignoreCache --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313/",
+    "server": "hugo server -D -E -F -N -M -O --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313/",
     "server:production": "HUGO_ENVIRONMENT=production npm run server -- --environment production",
     "server:development": "HUGO_MODULE_WORKSPACE=hugo.work npm run server -- --ignoreVendorPaths \"**\"",
     "update": "hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy && hugo mod graph"
