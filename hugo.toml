@@ -85,7 +85,11 @@ ignoreLogs = [
     title = ""
     weight = 22
     [menu.main.params]
+      class =
+      draft =
       icon = "fa-solid fa-folder-tree"
+      type =
+      devided =
   [[menu.main]]
     identifier = "tags"
     parent = "posts"
@@ -96,7 +100,11 @@ ignoreLogs = [
     title = ""
     weight = 23
     [menu.main.params]
+      class =
+      draft =
       icon = "fa-solid fa-tags"
+      type =
+      devided =
   [[menu.main]]
     identifier = "home"
     name = "Home"
@@ -279,9 +287,9 @@ ignoreLogs = [
 # See: https://gohugo.io/templates/output-formats/#media-types
 # -------------------------------------------------------------------------------------
 
-# [mediaTypes]
-  # [mediaTypes."application/feed+json"]
-    # suffixes = ["json"]
+[mediaTypes]
+  [mediaTypes."application/feed+json"]
+    suffixes = ["json"]
 
 # -------------------------------------------------------------------------------------
 # Output Format Definitions

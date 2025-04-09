@@ -1,4 +1,4 @@
-# Hugo
+# Go & Hugo
 public/
 resources/
 _vendor/
@@ -8,4 +8,6 @@ _vendor/
 node_modules/
 package-lock.json
 jsconfig.json
+
+# Environment
 .env
