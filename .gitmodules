@@ -1,0 +1,3 @@
+[submodule "static/favicon"]
+	path = static/favicon
+	url = https://github.com/attajak/favicon.git
