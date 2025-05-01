@@ -3,7 +3,7 @@ module github.com/attajak/attajak.pages.dev
 go 1.24.1
 
 require (
-	github.com/hugo-fixit/FixIt v0.3.19 // indirect
+	github.com/hugo-fixit/FixIt v0.3.20 // indirect
 	github.com/hugo-fixit/cmpt-flyfish v1.0.1 // indirect
 	github.com/hugo-fixit/cmpt-mdevtools v1.0.1 // indirect
 	github.com/hugo-fixit/cmpt-translate v1.5.7 // indirect
