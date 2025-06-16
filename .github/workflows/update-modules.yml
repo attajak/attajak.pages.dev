@@ -37,7 +37,7 @@ jobs:
           template: "- [{$repo.name}]({$repo.html_url})\\\n {$repo.description}"
 
       - name: Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v5
+        uses: stefanzweifel/git-auto-commit-action@v6
         with:
           commit_message: ':arrow_up: Chore(modules): update modules version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
