@@ -8,7 +8,7 @@ require (
 	github.com/hugo-fixit/cmpt-mdevtools v1.1.0 // indirect
 	github.com/hugo-fixit/cmpt-translate v1.7.0 // indirect
 	github.com/hugo-fixit/component-projects v1.8.0 // indirect
-	github.com/hugo-fixit/fixit-bundle v1.4.16 // indirect
+	github.com/hugo-fixit/fixit-bundle v1.5.0 // indirect
 	github.com/hugo-fixit/hugo-atom-feed v1.2.0 // indirect
 	github.com/hugo-fixit/hugo-json-feed v1.2.0 // indirect
 	github.com/hugo-fixit/shortcode-asciinema v1.1.0 // indirect
