@@ -10,8 +10,8 @@ github.com/hugo-fixit/component-projects v1.8.0 h1:1zowdsCTheg+6r44EmThLSJX+RqYo
 github.com/hugo-fixit/component-projects v1.8.0/go.mod h1:nXW0R37REwpfwUD1I4RtB5QW71vw66nRyB9uEpYxr+c=
 github.com/hugo-fixit/fixit-bundle v1.5.7 h1:vTxlSKTKoQW7qnpwIeAWBD3JMUs7yFHsK4qBOUbprPU=
 github.com/hugo-fixit/fixit-bundle v1.5.7/go.mod h1:Qmm/3GcXz1gIvaxs+Gyp3RFGGcENrgWoV/H+bd5+cM8=
-github.com/hugo-fixit/hugo-atom-feed v1.2.0 h1:NX3dJzmaN2JLauOzBBQF6vf1vyu23bxEI73QsBbnRcY=
-github.com/hugo-fixit/hugo-atom-feed v1.2.0/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
+github.com/hugo-fixit/hugo-atom-feed v1.2.2 h1:PyCociJbYTGlSFZSVRuXQIXvoqdqrEQgoJ9RhPdaeU0=
+github.com/hugo-fixit/hugo-atom-feed v1.2.2/go.mod h1:VL3kInxTH5EL+XjEhpo0ZW44fDhq6TI0qlKTFihg5hk=
 github.com/hugo-fixit/hugo-json-feed v1.2.0 h1:lsK2WvT/YrkSDuQxZHHC9TIN7TW7sZNVCJiy37N0bKs=
 github.com/hugo-fixit/hugo-json-feed v1.2.0/go.mod h1:ystvqmSnWdkU0aBybKKNztj8P1ViY6AhMaK/bsBL9uw=
 github.com/hugo-fixit/shortcode-asciinema v1.1.0 h1:nli2H/BeufC/LgT+Md35NFLfSYoNGs0z0yhCkH5cbvU=
