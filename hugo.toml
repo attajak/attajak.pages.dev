@@ -959,6 +959,7 @@ ignoreLogs = [
   # Depends on open custom blocks https://fixit.lruihao.cn/references/blocks/
   [params.customPartials]
     head = [
+      "inject/component-projects.html",
       "inject/fixit-docs-bookmark.html",
       "inject/shortcode-rewards.html",
     ]
@@ -977,7 +978,6 @@ ignoreLogs = [
       "inject/cmpt-flyfish.html",
       "inject/cmpt-mdevtools.html",
       "inject/cmpt-translate.html",
-      "inject/component-projects.html",
       "inject/shortcode-caniuse.html",
     ]
     postTocBefore = []

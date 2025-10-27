@@ -6,10 +6,10 @@
   "main": "index.js",
   "scripts": {
     "create": "hugo new content",
-    "build": "HUGO_ENV=production hugo --gc --minify --logLevel info",
+    "build": "HUGO_ENVIRONMENT=production hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -N -M -O --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost:1313/",
     "server:production": "HUGO_ENV=production npm run server -- --environment production",
-    "update": "hugo mod get -u && hugo mod tidy && hugo mod graph"
+    "update": "hugo mod get -u github.com/hugo-fixit/fixit-bundle && hugo mod tidy && hugo mod graph"
   },
   "repository": {
     "type": "git",
