@@ -990,13 +990,13 @@ ignoreLogs = [
   # FixIt bundle
   # cmpt-flyfish
   [params.flyfish]
-    enable = true
+    enable = false
     light = "rgb(0 119 190 / 10%)"
     dark = "rgb(255 255 255 / 10%)"
 
   # Mobile Devtools config
   [params.mDevtools]
-    enable = true
+    enable = false
     # "eruda", "vConsole" supported
     type = "eruda"
 
