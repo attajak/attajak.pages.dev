@@ -1,3 +1,4 @@
 config/**/*.toml linguist-detectable
 content/**/*.md linguist-detectable
 *.toml linguist-detectable
+*.yaml linguist-detectable

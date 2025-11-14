@@ -23,7 +23,7 @@ languageCode = "en"
 # language name ["English", "简体中文", "Français", "Polski", ...]
 languageName = "English"
 # whether to include Chinese/Japanese/Korean
-hasCJKLanguage = false
+hasCJKLanguage = true
 # copyright description used only for seo schema
 copyright = "[Attajak Janrak](https://github.com/attajak)"
 # whether to use robots.txt
@@ -32,18 +32,18 @@ enableRobotsTXT = true
 enableGitInfo = true
 # whether to use emoji code
 enableEmoji = true
-# default amount of posts in each pages
-[pagination]
-  disableAliases = false
-  pagerSize = 10
-  path = "page"
 # ignore some build errors
 ignoreLogs = [
   "error-get-remote-image",
   "error-get-remote-json",
   "error-remote-getjson",
   "error-missing-instagram-accesstoken"
-]
+  ]
+# default amount of posts in each pages
+[pagination]
+  disableAliases = false
+  pagerSize = 10
+  path = "page"
 
 # -------------------------------------------------------------------------------------
 # Menu Configuration
