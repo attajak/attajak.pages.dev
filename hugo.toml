@@ -190,6 +190,8 @@ weight = 80
 extended = true
 min = "0.134.1"
 [[module.imports]]
+path = "github.com/hugo-fixit/FixIt"
+[[module.imports]]
 path = "github.com/hugo-fixit/fixit-bundle"
 
 # -------------------------------------------------------------------------------------
@@ -990,13 +992,13 @@ showHome = true
   # FixIt bundle
   # cmpt-flyfish
   [params.flyfish]
-    enable = false
+    enable = true
     light = "rgb(0 119 190 / 10%)"
     dark = "rgb(255 255 255 / 10%)"
 
   # Mobile Devtools config
   [params.mDevtools]
-    enable = false
+    enable = true
     # "eruda", "vConsole" supported
     type = "eruda"
 
