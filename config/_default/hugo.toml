@@ -1,0 +1,32 @@
+# -------------------------------------------------------------------------------------
+# Hugo Configuration
+# See: https://gohugo.io/configuration/all/
+# -------------------------------------------------------------------------------------
+
+# website title
+title = "Attajak"
+# Hostname (and path) to the root
+baseURL = "/"
+# theme list
+# theme = ["FixIt"] # enable in your site config file
+# determines default content language ["en", "zh-cn", "fr", "pl", ...]
+defaultContentLanguage = "th"
+# language code ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "th"
+# language name ["English", "简体中文", "Français", "Polski", ...]
+languageName = "Thai"
+# whether to include Chinese/Japanese/Korean
+hasCJKLanguage = true
+# copyright description used only for seo schema
+copyright = "Attajak Janrak"
+# whether to use robots.txt
+enableRobotsTXT = true
+# whether to use git commit log
+enableGitInfo = true
+# whether to use emoji code
+enableEmoji = true
+# the main sections of a site
+# if set, the MainSections method on the Site object returns the given sections,
+# otherwise it returns the section with the most pages.
+mainSections = ["posts"]
+ignoreLogs = ["error-get-remote-json"]

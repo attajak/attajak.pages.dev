@@ -1,0 +1,49 @@
+# -------------------------------------------------------------------------------------
+# Output Format Configuration
+# See: https://gohugo.io/configuration/output-formats/
+# -------------------------------------------------------------------------------------
+
+# FixIt 0.3.0 | NEW Options to make output /archives/index.html file
+[archives]
+path = "archives"
+baseName = "index"
+mediaType = "text/html"
+isPlainText = false
+isHTML = true
+permalinkable = true
+notAlternative = true
+
+# FixIt 0.3.0 | NEW Options to make output /offline/index.html file
+[offline]
+path = "offline"
+baseName = "index"
+mediaType = "text/html"
+isPlainText = false
+isHTML = true
+permalinkable = true
+notAlternative = true
+
+# FixIt 0.3.0 | NEW Options to make output readme.md file
+[readme]
+baseName = "readme"
+mediaType = "text/markdown"
+isPlainText = true
+isHTML = false
+notAlternative = true
+
+# FixIt 0.3.0 | CHANGED Options to make output baidu_urls.txt file
+[baidu_urls]
+baseName = "baidu_urls"
+mediaType = "text/plain"
+isPlainText = true
+isHTML = false
+notAlternative = true
+
+# FixIt 0.3.10 | NEW Options to make output search.json file
+[search]
+baseName = "search"
+mediaType = "application/json"
+rel = "search"
+isPlainText = true
+isHTML = false
+permalinkable = true

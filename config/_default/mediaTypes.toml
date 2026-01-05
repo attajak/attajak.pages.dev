@@ -1,0 +1,7 @@
+# -------------------------------------------------------------------------------------
+# Media Types Configuration
+# See: https://gohugo.io/configuration/media-types/
+# -------------------------------------------------------------------------------------
+
+# [mediaTypes."application/feed+json"]
+# suffixes = ["json"]

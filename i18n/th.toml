@@ -1,0 +1,226 @@
+# คำแปลภาษาไทยสำหรับธีม FixIt
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# === init ===
+[init]
+configurationError = "ข้อผิดพลาดในการกำหนดค่า\nคุณยังไม่ได้กำหนดค่าพารามิเตอร์เวอร์ชัน FixIt อย่างถูกต้อง ดูรายละเอียดที่ https://fixit.lruihao.cn/documentation/basics/#theme-configuration"
+compatibilityError = "ข้อผิดพลาดความเข้ากันได้ ({{ .From }} -> {{ .To }}):\nคุณมีการอัปเดตที่ไม่เข้ากัน ดูรายละเอียดที่ https://github.com/hugo-fixit/FixIt/releases"
+devVersionWarn = "คุณกำลังใช้ FixIt เวอร์ชันสำหรับการพัฒนา โปรดพิจารณาใช้เวอร์ชันที่มีเสถียรภาพ\nดูรายละเอียดที่ https://github.com/hugo-fixit/FixIt/releases"
+devEnvWarn = "สภาพแวดล้อมปัจจุบันคือ \"development\" ระบบ \"ความคิดเห็น\", \"PWA\", \"CDN\", \"fingerprint\" และ \"การวิเคราะห์\" จะถูกปิดใช้งาน"
+quicklyUpgrade = "อัปเกรดอย่างรวดเร็วด้วยคำสั่ง: "
+# === init ===
+
+# === baseof ===
+[baseof]
+backToTop = "กลับไปด้านบน"
+viewComments = "ดูความคิดเห็น"
+noscript = "เว็บไซต์นี้ทำงานได้ดีที่สุดเมื่อเปิดใช้งาน JavaScript"
+# === baseof ===
+
+# === Taxonomy ===
+[archives]
+other = "คลังบทความ"
+
+[allSome]
+other = "{{ .Some }} ทั้งหมด"
+
+[category]
+other = "หมวดหมู่"
+
+[categories]
+other = "หมวดหมู่"
+
+[collection]
+other = "คอลเลกชัน"
+
+[collections]
+other = "คอลเลกชัน"
+
+[tag]
+other = "แท็ก"
+
+[tags]
+other = "แท็ก"
+
+[posts]
+other = "บทความ"
+
+# === Taxonomy ===
+
+# === Section ===
+[section]
+recentlyUpdated = "อัปเดตล่าสุด"
+
+[section.totalWordCount]
+one = "รวมทั้งหมด 1 คำ"
+other = "รวมทั้งหมด {{ .Count }} คำ"
+
+[section.archiveCounter]
+one = "มีเพียง 1 บทความ"
+other = "รวมทั้งหมด {{ .Count }} บทความ"
+# === Section ===
+
+# === Pagination ===
+[pagination]
+more = "เพิ่มเติม"
+# === Pagination ===
+
+# === partials/header.html ===
+[header]
+selectLanguage = "เลือกภาษา"
+noMoretTranslations = "ไม่มีภาษาอื่น"
+switchTheme = "เปลี่ยนธีม"
+# === partials/header.html ===
+
+# === partials/footer.html ===
+[footer]
+poweredBySome = "สร้างโดย {{ .Hugo }} | ธีม - {{ .Theme }}"
+siteUV = "จำนวนผู้เข้าชมทั้งหมด"
+sitePV = "จำนวนการเข้าชมทั้งหมด"
+siteRunning = "เว็บไซต์เปิดมาแล้ว ..."
+# === partials/footer.html ===
+
+# === partials/comment.html ===
+[comment]
+valineLang = "th"
+valinePlaceholder = "แสดงความคิดเห็นของคุณ ..."
+facebookLanguageCode = "th_TH"
+# === partials/comment.html ===
+
+# === partials/assets.html ===
+[assets]
+search = "ค้นหา"
+searchPlaceholder = "ค้นหาชื่อเรื่องหรือเนื้อหา ..."
+searchIn = "ค้นหาใน {{ . }}"
+gotoResultsPage = "ไปที่หน้าผลลัพธ์การค้นหา ..."
+clear = "ล้าง"
+cancel = "ยกเลิก"
+noResultsFound = "ไม่พบผลลัพธ์"
+copyToClipboard = "คัดลอกไปยังคลิปบอร์ด"
+copyText = "คัดลอก"
+copiedText = "คัดลอกแล้ว"
+toggleLineNumbers = "แสดง/ซ่อนเลขบรรทัด"
+toggleLineWrap = "ตัดบรรทัดโค้ด"
+toggleCodeEditable = "อนุญาตให้แก้ไขโค้ด"
+expandCode = "ขยายหรือย่อบล็อกโค้ด"
+cookieconsentMessage = "เว็บไซต์นี้ใช้คุกกี้เพื่อปรับปรุงประสบการณ์ของคุณ"
+cookieconsentDismiss = "รับทราบ!"
+cookieconsentLink = "เรียนรู้เพิ่มเติม"
+# === partials/assets.html ===
+
+# === partials/plugin/share.html ===
+[shareOn]
+other = "แชร์บน"
+# === partials/plugin/share.html ===
+
+# === posts/single.html ===
+[single]
+contents = "สารบัญ"
+pin = "ปักหมุด"
+repost = "โพสต์ซ้ำ"
+publishedOnDate = "เผยแพร่เมื่อ {{ .Date }}"
+views = "เข้าชม"
+comments = "ความคิดเห็น"
+author = "ผู้เขียน"
+updatedOnDate = "อัปเดตเมื่อ {{ .Date }}"
+readMarkdown = "อ่าน Markdown"
+viewSource = "ดูซอร์สโค้ด"
+editThisPage = "แก้ไขหน้านี้"
+reportIssue = "รายงานปัญหา"
+openInEditor = "เปิดในโปรแกรมแก้ไข"
+back = "กลับ"
+home = "หน้าแรก"
+readMore = "อ่านเพิ่มเติม"
+expirationReminder = "บทความนี้อัปเดตล่าสุดเมื่อ {{ .Date }} เนื้อหาอาจล้าสมัย"
+encryptedAbstract = "บทความนี้ถูกเข้ารหัส เนื้อหาจึงไม่สามารถแสดงผลได้!"
+encryptedMessage = "โปรดป้อนรหัสผ่าน"
+password = "รหัสผ่าน"
+enterBtn = "ตกลง"
+encryptyAgain = "เข้ารหัสอีกครั้ง"
+relatedContent = "เนื้อหาที่เกี่ยวข้อง"
+
+[single.includedIn]
+categories = "อยู่ในหมวดหมู่ {{ .Categories }}"
+collections = "อยู่ในคอลเลกชัน {{ .Collections }}"
+both = "อยู่ในหมวดหมู่ {{ .Categories }} และคอลเลกชัน {{ .Collections }}"
+
+[single.wordCount]
+one = "1 คำ"
+other = "{{ .Count }} คำ"
+
+[single.fuzzyWordCount]
+other = "ประมาณ {{ .Count }} คำ"
+
+[single.readingTime]
+one = "1 นาที"
+other = "{{ .Count }} นาที"
+
+[single.reward]
+donate = "สนับสนุน"
+wechatpay = "WeChat Pay"
+alipay = "Alipay"
+paypal = "PayPal"
+bitcoin = "Bitcoin"
+# === posts/single.html ===
+
+# === 404.html ===
+[pageNotFound]
+other = "ไม่พบหน้านี้"
+
+[pageNotFoundText]
+other = "ขออภัย ไม่พบหน้าที่คุณกำลังมองหา"
+# === 404.html ===
+
+# === offline ===
+[offlineTitle]
+other = "ออฟไลน์"
+
+[offlineText]
+other = "คุณไม่ได้เชื่อมต่ออินเทอร์เน็ต สามารถดูได้เฉพาะหน้าที่เก็บไว้ในแคชเท่านั้น"
+# === offline ===
+
+# === GitHub Alert ===
+[alert]
+note = "บันทึก"
+tip = "คำแนะนำ"
+important = "สำคัญ"
+warning = "คำเตือน"
+caution = "ข้อควรระวัง"
+# === GitHub Alert ===
+
+# === Task lists ===
+[taskList]
+x = "เสร็จสิ้น"
+" " = "ยังไม่ได้ทำ"
+"/" = "กำลังดำเนินการ"
+"-" = "ยกเลิก"
+"<" = "กำหนดเวลาแล้ว"
+">" = "เปลี่ยนกำหนดเวลา"
+"!" = "สำคัญ"
+"?" = "คำถาม"
+# === Task lists ===
+
+# === shortcodes/admonition.html ===
+[admonition]
+note = "บันทึก"
+abstract = "สรุป"
+info = "ข้อมูล"
+todo = "สิ่งที่ต้องทำ"
+tip = "แนะนำ"
+success = "สำเร็จ"
+question = "คำถาม"
+warning = "คำเตือน"
+failure = "ล้มเหลว"
+danger = "อันตราย"
+bug = "บั๊ก"
+example = "ตัวอย่าง"
+quote = "อ้างอิง"
+# === shortcodes/admonition.html ===
+
+# === shortcodes/version.html ===
+[version]
+new = "ใหม่"
+changed = "เปลี่ยน"
+deleted = "ลบ"
+deprecated = "ไม่แนะนำให้ใช้"
+# === shortcodes/version.html ===

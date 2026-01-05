@@ -1,0 +1,166 @@
+# -------------------------------------------------------------------------------------
+# Menu Configuration
+# See: https://fixit.lruihao.cn/documentation/basics/#menu-configuration
+# -------------------------------------------------------------------------------------
+
+[[main]]
+identifier = "archives"
+parent = "posts"
+# you can add extra information before the name (HTML format is supported), such as icons
+pre = ""
+# you can add extra information after the name (HTML format is supported), such as icons
+post = ""
+name = "Archives"
+url = "/archives/"
+# title will be shown when you hover on this menu link
+title = ""
+weight = 1
+
+# FixIt 0.2.14 | NEW add user-defined content to menu items
+[main.params]
+# add css class to a specific menu item
+class = ""
+# whether set as a draft menu item whose function is similar to a draft post/page
+draft = false
+# FixIt 0.2.16 | NEW add fontawesome icon to a specific menu item
+icon = "fa-solid fa-archive"
+# FixIt 0.2.16 | NEW set menu item type, optional values: ["mobile", "desktop"]
+type = ""
+# FixIt 0.3.9 | NEW whether to show the submenu item divider line
+divided = false
+
+[[main]]
+identifier = "categories"
+parent = "posts"
+pre = ""
+post = ""
+name = "Categories"
+url = "/categories/"
+title = ""
+weight = 2
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-folder-tree"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "tags"
+parent = "posts"
+pre = ""
+post = ""
+name = "Tags"
+url = "/tags/"
+title = ""
+weight = 3
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-tags"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "home"
+parent = ""
+pre = ""
+post = ""
+name = "Home"
+url = "/"
+title = ""
+weight = 10
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-home"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "projects"
+parent = ""
+pre = ""
+post = ""
+name = "Projects"
+url = "/projects/"
+title = ""
+weight = 30
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-laptop-code"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "posts"
+parent = ""
+pre = ""
+post = ""
+name = "Posts"
+url = "/posts/"
+title = ""
+weight = 20
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-pen"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "about"
+parent = ""
+pre = ""
+post = ""
+name = "About"
+url = "/about/"
+title = ""
+weight = 40
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-signature"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "contact"
+parent = ""
+pre = ""
+post = ""
+name = "Contact"
+url = "/contact/"
+title = ""
+weight = 50
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-envelope"
+type = ""
+divided = ""
+
+[[main]]
+identifier = "sitemap"
+parent = ""
+pre = ""
+post = ""
+name = "Sitemap"
+url = "/sitemap.xml"
+title = ""
+weight = 60
+
+[main.params]
+class = ""
+draft = false
+icon = "fa-solid fa-sitemap"
+type = ""
+divided = ""
