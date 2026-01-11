@@ -8,11 +8,12 @@
     "create": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -N -M -O --disableFastRender --logLevel info --bind 0.0.0.0 --baseURL http://localhost",
-    "server:production": "npm run server -- --environment production",
-    "update": "hugo mod get -u ./... && hugo mod tidy && git submodule update --remote --merge",
+    "preview": "npm run server -- --environment production",
+    "update": "hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy && git submodule update --remote --merge",
     "start": "npm run server",
     "prepare": "git submodule update --init --recursive",
-    "new": "npm run create"
+    "new": "npm run create",
+    "mods": "hugo mod graph"
   },
   "repository": {
     "type": "git",
