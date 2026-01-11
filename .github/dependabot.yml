@@ -8,12 +8,12 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "monthly"
+      interval: "weekly"
     open-pull-requests-limit: 1000
     assignees:
       - "attajak"
     labels:
-      - "dependencies"
+      - "github-actions"
   # - package-ecosystem: "gomod" # See documentation for possible values
     # directory: "/" # Location of package manifests
     # schedule:
@@ -31,4 +31,4 @@ updates:
       assignees:
         - "attajak"
       labels:
-        - "dependencies"
+        - "gitsubmodules"
