@@ -29,7 +29,7 @@ jobs:
 
       - name: Update modules
         run: |
-          hugo mod get -u ./...
+          hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest
           hugo mod tidy
           hugo mod graph
 
@@ -45,5 +45,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(modules): update modules version'
+          commit_message: ':arrow_up: Chore(Modules): Update FixIt-bundle version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'
