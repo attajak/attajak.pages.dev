@@ -3,7 +3,7 @@ on:
   push:
     branches: [ main ]
     paths:
-      - '.github/workflows/deploy.yml'
+      - '.github/workflows/**'
       - 'assets/**'
       - 'config/**'
       - 'content/**'
