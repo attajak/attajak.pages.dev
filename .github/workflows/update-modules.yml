@@ -8,13 +8,16 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   Update-modules:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
         with:
-          submodules: true
+          submodules: recursive
           fetch-depth: 0
 
       - name: Setup Hugo
@@ -45,5 +48,5 @@ jobs:
       - name: Commit changes
         uses: stefanzweifel/git-auto-commit-action@v7
         with:
-          commit_message: ':arrow_up: Chore(Modules): Update FixIt-bundle version'
+          commit_message: ':arrow_up: Chore(deps): Update theme component version'
           commit_author: 'github-actions[bot] <github-actions[bot]@users.noreply.github.com>'

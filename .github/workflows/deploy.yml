@@ -12,13 +12,20 @@ on:
       - 'layouts/**'
       - 'static/**'
       - 'themes/**'
+      - 'config.*'
       - 'hugo.*'
-      - 'go.mod'
+      - 'go.*'
+      - 'package.json'
   workflow_run:
     workflows: ['Update modules']
     types:
       - completed
   workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
 
 jobs:
   Actions-Hugo-Deploy:
