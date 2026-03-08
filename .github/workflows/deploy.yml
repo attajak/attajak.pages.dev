@@ -16,6 +16,7 @@ on:
       - 'hugo.*'
       - 'go.*'
       - 'package.json'
+  pull_request:
   workflow_run:
     workflows: ['Update modules']
     types:
@@ -26,6 +27,10 @@ permissions:
   contents: read
   pages: write
   id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
 
 jobs:
   Actions-Hugo-Deploy:
