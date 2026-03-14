@@ -1,8 +1,9 @@
 name = "attajak.pages.dev"
-compatibility_date = "2025-07-31"
+compatibility_date = "2026-03-13"
 
 [build]
 command = "chmod a+x build.sh && ./build.sh"
+pages_build_output_dir = "./public"
 
 [assets]
 directory = "./public"
