@@ -10,12 +10,12 @@
 main() {
 
   DART_SASS_VERSION=1.98.0
-  GO_VERSION=1.26.0
+  GO_VERSION=1.26.1
   HUGO_VERSION=0.157.0
   NODE_VERSION=24.14.0
   CF_PAGES_URL=https://attajak.pages.dev
 
-  export TZ=Europe/Oslo
+  export TZ=Asia/Bangkok
 
   # Install Dart Sass
   echo "Installing Dart Sass ${DART_SASS_VERSION}..."
@@ -62,7 +62,7 @@ main() {
 
   # Build the site
   echo "Building the site..."
-  hugo build --gc --minify -b $CF_PAGES_URL --logLevel info
+  hugo build --gc --minify
 
 }
 
