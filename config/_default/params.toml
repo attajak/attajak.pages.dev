@@ -728,6 +728,8 @@ mode = "classic"
 wrapperClass = ""
 # the maximum number of lines to show in the code block preview
 maxShownLines = 10
+# whether to show shadow effect for code blocks, available values: ["always", "hover", "never"]
+shadow = "never"
 # whether to enable code copy button
 copyable = true
 # [classic] whether to enable code download button in the code block header
@@ -759,6 +761,17 @@ level = 1
 folderSlash = false
 # list of file or folder names to ignore
 ignoreList = []
+
+# FixIt 0.4.5 | NEW Print config
+[params.print]
+# whether to expand all admonitions before printing
+expand_admonition = true
+# whether to expand all code blocks and code tabs before printing
+expand_code = true
+# whether to expand all details elements before printing
+expand_details = true
+# whether to expand all file trees before printing
+expand_file_tree = false
 
 # FixIt 0.3.12 | NEW Custom partials config
 # Custom partials must be stored in the /layouts/_partials/ directory.

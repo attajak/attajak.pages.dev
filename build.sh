@@ -11,8 +11,8 @@ main() {
 
   DART_SASS_VERSION=1.98.0
   GO_VERSION=1.26.1
-  HUGO_VERSION=0.157.0
-  NODE_VERSION=24.14.0
+  HUGO_VERSION=0.159.1
+  NODE_VERSION=24.14.1
   CF_PAGES_URL=https://attajak.pages.dev
 
   export TZ=Asia/Bangkok
