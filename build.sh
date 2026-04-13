@@ -9,9 +9,9 @@
 
 main() {
 
-  DART_SASS_VERSION=1.98.0
+  DART_SASS_VERSION=1.99.0
   GO_VERSION=1.26.1
-  HUGO_VERSION=0.159.2
+  HUGO_VERSION=0.160.1
   NODE_VERSION=24.14.1
   CF_PAGES_URL=https://attajak.pages.dev
 
@@ -62,7 +62,7 @@ main() {
 
   # Build the site
   echo "Building the site..."
-  hugo build --gc --minify
+  hugo build --gc --minify -b $CF_PAGES_URL
 
 }
 
