@@ -1,5 +1,5 @@
 name = "attajak"
-compatibility_date = "2025-07-31"
+compatibility_date = "2026-06-20"
 
 [build]
 command = "chmod a+x build.sh && ./build.sh"

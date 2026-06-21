@@ -5,7 +5,7 @@
   "description": "This is a quick start template for Hugo theme [FixIt](https://github.com/hugo-fixit/FixIt). It uses [Hugo modules](https://gohugo.io/hugo-modules/) feature to load the theme.",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf _vendor/ resources/ public/ node_modules/ .hugo_build.lock",
+    "clean": "hugo mod clean && rm -rf _vendor/ resources/ public/ node_modules/ .hugo_build.lock",
     "new": "hugo new content",
     "build": "hugo --gc --minify --logLevel info",
     "server": "hugo server -D -E -F -N -M -O --disableFastRender --bind 0.0.0.0 --baseURL http://localhost:1313 --logLevel info --noBuildLock --printMemoryUsage",
@@ -13,8 +13,8 @@
     "update": "git submodule update --remote --merge && hugo mod get -u github.com/hugo-fixit/fixit-bundle@latest && hugo mod tidy",
     "start": "npm run server",
     "prepare": "git submodule update --init --recursive",
-    "mods": "git submodule && hugo mod graph",
-    "content": "hugo list all"
+    "list:mods": "git submodule && hugo mod graph",
+    "list:content": "hugo list all"
   },
   "repository": {
     "type": "git",
