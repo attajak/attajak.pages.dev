@@ -12,8 +12,8 @@ set -euo pipefail
 main() {
 
     DART_SASS_VERSION="1.101.0"
-    GO_VERSION="1.26.4"
-    HUGO_VERSION="0.163.3"
+    GO_VERSION="1.26.5"
+    HUGO_VERSION="0.164.0"
     NODE_VERSION="24.17.0"
     CF_PAGES_URL="https://attajak.pages.dev"
 
