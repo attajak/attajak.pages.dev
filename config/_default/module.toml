@@ -4,8 +4,8 @@
 # -------------------------------------------------------------------------------------
 
 [hugoVersion]
-extended = true
-min = "0.147.7"
+min = "0.161.0"
 
 [[imports]]
 path = "github.com/hugo-fixit/fixit-bundle"
+version = "v1.6.9"
