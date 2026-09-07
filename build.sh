@@ -13,7 +13,7 @@ main() {
 
     DART_SASS_VERSION="1.104.0"
     GO_VERSION="1.27.1"
-    HUGO_VERSION="0.164.0"
+    HUGO_VERSION="0.165.0"
     NODE_VERSION="24.18.0"
     CF_PAGES_URL="https://attajak.pages.dev"
 
