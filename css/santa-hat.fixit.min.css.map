@@ -1,0 +1,13 @@
+{
+	"version": 3,
+	"file": "santa-hat.fixit.min.css",
+	"sourceRoot": "/home/runner/work/attajak.pages.dev/attajak.pages.dev",
+	"sources": [
+		"/home/runner/.cache/hugo_cache/modules/filecache/modules/pkg/mod/github.com/hugo-fixit/cmpt-santa-hat@v1.1.0/assets/css/santa-hat.fixit.scss"
+	],
+	"sourcesContent": [
+		".header-wrapper {\n  .header-title:hover {\n    .santa-hat {\n      animation: jiggle 0.4s ease-in-out infinite;\n    }\n  }\n  .santa-hat {\n    width: 20px;\n    height: 20px;\n    z-index: 1;\n    translate: var(--fi-santa-hat-offset, 8px 2px);\n    position: absolute;\n    top: 0;\n    animation: jiggle 0.4s ease-in-out;\n\n    + img.logo {\n      --fi-santa-hat-shadow: light-dark(rgba(0, 0, 0, 0.6), rgba(255, 255, 255, 0.6));\n      // Simulates the effect of a hat covering\n      filter: drop-shadow(0.5px -0.5px 1px var(--fi-santa-hat-shadow));\n    }\n  }\n\n  @keyframes jiggle {\n    0%, 100% {\n      transform: rotate(0deg);\n    }\n    25% {\n      transform: rotate(-8deg);\n    }\n    50% {\n      transform: rotate(6deg);\n    }\n    75% {\n      transform: rotate(-4deg);\n    }\n  }\n}\n"
+	],
+	"names": [],
+	"mappings": "AAAA,AAEI,eAFW,CACb,aAAa,CAAC,KAAK,CACjB,UAAU,AAAC,CACT,SAAS,CAAE,gCAAgC,CAC5C,AAJL,AAME,eANa,CAMb,UAAU,AAAC,CACT,KAAK,CAAE,IAAI,CACX,MAAM,CAAE,IAAI,CACZ,OAAO,CAAE,CAAC,CACV,SAAS,CAAE,mCAAmC,CAC9C,QAAQ,CAAE,QAAQ,CAClB,GAAG,CAAE,CAAC,CACN,SAAS,CAAE,uBAAuB,CAOnC,AApBH,AAeI,eAfW,CAMb,UAAU,CASN,GAAG,AAAA,KAAK,AAAC,CACT,qBAAqB,CAAA,yDAAC,CAEtB,MAAM,CAAE,wDAAwD,CACjE,AAGH,UAAU,CAAV,MAAU,CACR,EAAE,CAAE,IAAI,CACN,SAAS,CAAE,YAAY,CAEzB,GAAG,CACD,SAAS,CAAE,aAAa,CAE1B,GAAG,CACD,SAAS,CAAE,YAAY,CAEzB,GAAG,CACD,SAAS,CAAE,aAAa"
+}
