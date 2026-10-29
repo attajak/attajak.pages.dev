@@ -5,6 +5,7 @@
 
 version: 2
 updates:
+  # GitHub Actions
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
@@ -14,21 +15,23 @@ updates:
       - "attajak"
     labels:
       - "github-actions"
-  # - package-ecosystem: "gomod" # See documentation for possible values
-    # directory: "/" # Location of package manifests
-    # schedule:
-      # interval: "weekly"
-    # open-pull-requests-limit: 1000
-    # assignees:
-      # - "attajak"
-    # labels:
-      # - "dependencies"
-  - package-ecosystem: "gitsubmodule"
-    directory: "/"
-    schedule:
-      interval: "weekly"
-      open-pull-requests-limit: 1000
-      assignees:
-        - "attajak"
-      labels:
-        - "gitsubmodules"
+  # Hugo modules
+#  - package-ecosystem: "gomod" # See documentation for possible values
+#    directory: "/" # Location of package manifests
+#    schedule:
+#      interval: "weekly"
+#    open-pull-requests-limit: 1000
+#    assignees:
+#      - "attajak"
+#    labels:
+  # Git submodules
+#      - "dependencies"
+#  - package-ecosystem: "gitsubmodule"
+#    directory: "/"
+#    schedule:
+#      interval: "weekly"
+#      open-pull-requests-limit: 1000
+#      assignees:
+#        - "attajak"
+#      labels:
+#        - "gitsubmodules"
