@@ -11,10 +11,10 @@ set -euo pipefail
 
 main() {
 
-    DART_SASS_VERSION="1.105.1"
-    GO_VERSION="1.27.1"
-    HUGO_VERSION="0.167.0"
-    NODE_VERSION="24.21.0"
+    DART_SASS_VERSION="1.107.0"
+    GO_VERSION="1.27.3"
+    HUGO_VERSION="0.169.0"
+    NODE_VERSION="24.22.1"
     CF_PAGES_URL="https://attajak.pages.dev"
 
     export TZ="Asia/Bangkok"
